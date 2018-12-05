@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="top.cflwork.dao.BookDao">
+
+	<select id="get" resultType="top.cflwork.domain.BookDO">
+		select `id`,`book_name`,`book_imei`,`author`,`public_time`,`create_time` from sys_book where id = #{value}
+	</select>
+
+	<select id="list" resultType="top.cflwork.domain.BookDO">
+		select `id`,`book_name`,`book_imei`,`author`,`public_time`,`create_time` from sys_book
+        <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="bookName != null and bookName != ''"> and book_name = #{bookName} </if>
+		  		  <if test="bookImei != null and bookImei != ''"> and book_imei = #{bookImei} </if>
+		  		  <if test="author != null and author != ''"> and author = #{author} </if>
+		  		  <if test="publicTime != null and publicTime != ''"> and public_time = #{publicTime} </if>
+		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from sys_book
+		 <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="bookName != null and bookName != ''"> and book_name = #{bookName} </if>
+		  		  <if test="bookImei != null and bookImei != ''"> and book_imei = #{bookImei} </if>
+		  		  <if test="author != null and author != ''"> and author = #{author} </if>
+		  		  <if test="publicTime != null and publicTime != ''"> and public_time = #{publicTime} </if>
+		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="top.cflwork.domain.BookDO" useGeneratedKeys="true" keyProperty="id">
+		insert into sys_book
+		(
+			`book_name`, 
+			`book_imei`, 
+			`author`, 
+			`public_time`, 
+			`create_time`
+		)
+		values
+		(
+			#{bookName}, 
+			#{bookImei}, 
+			#{author}, 
+			#{publicTime}, 
+			#{createTime}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="top.cflwork.domain.BookDO">
+		update sys_book 
+		<set>
+			<if test="bookName != null">`book_name` = #{bookName}, </if>
+			<if test="bookImei != null">`book_imei` = #{bookImei}, </if>
+			<if test="author != null">`author` = #{author}, </if>
+			<if test="publicTime != null">`public_time` = #{publicTime}, </if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="remove">
+		delete from sys_book where id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from sys_book where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>
