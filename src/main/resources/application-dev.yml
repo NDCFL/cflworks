@@ -1,5 +1,5 @@
 bootdo:
-  uploadPath: c:/var/uploaded_files/
+  uploadPath: F:/var/uploaded_files/
 logging:
   level:
     root: info
