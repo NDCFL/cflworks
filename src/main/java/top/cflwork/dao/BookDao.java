@@ -11,8 +11,8 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 图书表
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2018-10-22 14:17:18
  */
 @Mapper

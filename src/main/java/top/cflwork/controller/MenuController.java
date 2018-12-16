@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @author cflworks 275300091@qq.com
  */
 @RequestMapping("/sys/menu")
 @Controller
@@ -73,9 +73,6 @@ public class MenuController extends BaseController {
 	@PostMapping("/save")
 	@ResponseBody
 	R save(MenuDO menu) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (menuService.save(menu) > 0) {
 			return R.ok();
 		} else {
@@ -88,9 +85,6 @@ public class MenuController extends BaseController {
 	@PostMapping("/update")
 	@ResponseBody
 	R update(MenuDO menu) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (menuService.update(menu) > 0) {
 			return R.ok();
 		} else {
@@ -103,9 +97,6 @@ public class MenuController extends BaseController {
 	@PostMapping("/remove")
 	@ResponseBody
 	R remove(Long id) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (menuService.remove(id) > 0) {
 			return R.ok();
 		} else {

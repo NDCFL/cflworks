@@ -1,6 +1,6 @@
 package top.cflwork.config;//package top.cflwork.common.config;
 //
-//import top.cflwork.BootdoApplication;
+//import top.cflwork.CflworksApplication;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 //import org.springframework.boot.builder.SpringApplicationBuilder;

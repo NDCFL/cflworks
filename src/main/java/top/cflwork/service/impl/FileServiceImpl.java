@@ -1,6 +1,6 @@
 package top.cflwork.service.impl;
 
-import top.cflwork.config.BootdoConfig;
+import top.cflwork.config.CflworksConfig;
 import top.cflwork.service.FileService;
 import top.cflwork.dao.FileDao;
 import top.cflwork.vo.FileDO;
@@ -19,7 +19,7 @@ public class FileServiceImpl implements FileService {
 	private FileDao sysFileMapper;
 
 	@Autowired
-	private BootdoConfig bootdoConfig;
+	private CflworksConfig cflworksConfig;
 	@Override
 	public FileDO get(Long id){
 		return sysFileMapper.get(id);
@@ -60,7 +60,7 @@ public class FileServiceImpl implements FileService {
 		Boolean isExist = false;
 		if (!StringUtils.isEmpty(url)) {
 			String filePath = url.replace("/files/", "");
-			filePath = bootdoConfig.getUploadPath() + filePath;
+			filePath = cflworksConfig.getUploadPath() + filePath;
 			File file = new File(filePath);
 			if (file.exists()) {
 				isExist = true;

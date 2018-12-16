@@ -4,8 +4,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix="bootdo")
-public class BootdoConfig {
+@ConfigurationProperties(prefix="cflworks")
+public class CflworksConfig {
 	//上传路径
 	private String uploadPath;
 

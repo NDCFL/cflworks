@@ -16,6 +16,7 @@
     <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
     <link href="/css/style.css?v=4.1.0" rel="stylesheet">
+    <link href="/js/plugins/layui/css/layui.css" rel="stylesheet">
 </head>
 <body class="fixed-sidebar full-height-layout gray-bg"
       style="overflow: hidden">
@@ -29,9 +30,8 @@
             <ul class="nav" id="side-menu">
                 <li class="nav-header">
                     <div>
-                        <span><img alt="image" class="img-circle" height="60" width="60" th:src="${picUrl}"/></span>
-                        <h3 class="" style="color: #ffffff">
-                            </i>BootDo后台管理系统
+                        <div style="text-align: center;margin: auto;"><img alt="image" src="" id="updateHeadIcon" class="img-circle" style="margin: auto;text-align: center" height="60" width="60"/></div>
+                        <h3 class="" style="color: #ffffff;text-align: center;margin-top: 10px" th:text="${name}">
                         </h3>
                     </div>
                     <div class="dropdown profile-element hidden">
@@ -39,7 +39,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear">
                             <span class="block m-t-xs"><strong class="font-bold"
-                                                               th:text="${username}">admin</strong></span>
+                                                               th:text="${name}">admin</strong></span>
                             <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
                              </span>
                         </a>
@@ -56,7 +56,7 @@
                             <li><a href="/logout">安全退出</a>
                             </li>
                         </ul>
-                        <div class="logo-element">BootDo</div>
+                        <div class="logo-element">cflworks</div>
                     </div>
                 </li>
                 <li><a href="#"> <i class="fa fa-home"></i> <span
@@ -64,7 +64,7 @@
                 </a>
                     <ul class="nav nav-second-level">
                         <li><a id="index001" class="J_menuItem" href="index_v1.html"
-                               data-index="0" th:href="@{/main}">了解BootDo</a></li>
+                               data-index="0" th:href="@{/main}">了解cflworks</a></li>
                     </ul>
                 </li>
                 <li th:each="menu : ${menus}"><a href="#"> <i
@@ -172,7 +172,7 @@
                     seamless></iframe>
         </div>
         <div class="footer">
-            <div class="pull-right">BootDo面向学习型的开源框架</div>
+            <div class="pull-right">cflworks面向学习型的开源框架</div>
         </div>
     </div>
     <!--右侧部分结束-->
@@ -300,7 +300,9 @@
 <script src="/js/appjs/oa/webSocket/stomp.min.js"></script>
 <!-- Toastr script -->
 <script src="/js/plugins/toastr/toastr.min.js"></script>
+<script src="/js/plugins/layui/layui.js"></script>
 <script type="text/javascript">
+    refushFaceImg();
     var stompClient = null;
     $(function () {
         connect();
@@ -368,6 +370,78 @@
             this.notify()
         }
     })
+    layui.use('upload', function() {
+        var $ = layui.jquery
+            , upload = layui.upload;
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#updateHeadIcon'
+            , url: '/sys/user/updateHeadIcon'
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#updateHeadIcon').attr('src', result); //图片链接（base64）
+                });
+            }
+            , done: function (res) {
+                //如果上传失败
+                if (res.code > 0) {
+                    return layer.msg('上传失败');
+                }else{
+                    layer.msg("修改成功");
+                    refushFaceImg();
+                }
+                //上传成功
+            }
+            , error: function () {
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function () {
+                    uploadInst.upload();
+                });
+            }
+        });
+        var $ = layui.jquery
+            , upload = layui.upload;
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#update_headIcon'
+            , url: '/sys/user/updateHeadIcon'
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#update_headIcon').attr('src', result); //图片链接（base64）
+                });
+            }
+            , done: function (res) {
+                //如果上传失败
+                if (res.code > 0) {
+                    return layer.msg('上传失败');
+                }else{
+                    layer.msg("修改成功");
+                    refushFaceImg();
+                }
+                //上传成功
+            }
+            , error: function () {
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function () {
+                    uploadInst.upload();
+                });
+            }
+        });
+    });
+    function refushFaceImg() {
+        $.post(
+            "/sys/user/getInfo",
+            function (data) {
+                $("#updateHeadIcon").attr("src",data.msg);
+            },"json"
+        );
+    }
 </script>
 </body>
 </html>

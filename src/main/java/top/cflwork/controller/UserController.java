@@ -2,16 +2,16 @@ package top.cflwork.controller;
 
 import top.cflwork.common.annotation.Log;
 import top.cflwork.config.Constant;
-import top.cflwork.util.MD5Utils;
-import top.cflwork.util.PageUtils;
-import top.cflwork.util.Query;
-import top.cflwork.util.R;
+import top.cflwork.service.FileService;
+import top.cflwork.util.*;
 import top.cflwork.domain.DeptDO;
 import top.cflwork.domain.RoleDO;
 import top.cflwork.domain.UserDO;
 import top.cflwork.service.DictService;
 import top.cflwork.service.RoleService;
 import top.cflwork.service.UserService;
+import top.cflwork.vo.FileDO;
+import top.cflwork.vo.FileVo;
 import top.cflwork.vo.Tree;
 import top.cflwork.vo.UserVO;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -36,6 +36,8 @@ public class UserController extends BaseController {
 	RoleService roleService;
 	@Autowired
 	DictService dictService;
+	@Autowired
+	private FileService fileService;
 	@RequiresPermissions("sys:user:user")
 	@GetMapping("")
 	String user(Model model) {
@@ -78,9 +80,6 @@ public class UserController extends BaseController {
 	@PostMapping("/save")
 	@ResponseBody
 	R save(UserDO user) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		user.setPassword(MD5Utils.encrypt(user.getUsername(), user.getPassword()));
 		if (userService.save(user) > 0) {
 			return R.ok();
@@ -93,9 +92,6 @@ public class UserController extends BaseController {
 	@PostMapping("/update")
 	@ResponseBody
 	R update(UserDO user) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (userService.update(user) > 0) {
 			return R.ok();
 		}
@@ -108,9 +104,6 @@ public class UserController extends BaseController {
 	@PostMapping("/updatePeronal")
 	@ResponseBody
 	R updatePeronal(UserDO user) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (userService.updatePersonal(user) > 0) {
 			return R.ok();
 		}
@@ -123,9 +116,6 @@ public class UserController extends BaseController {
 	@PostMapping("/remove")
 	@ResponseBody
 	R remove(Long id) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (userService.remove(id) > 0) {
 			return R.ok();
 		}
@@ -137,9 +127,6 @@ public class UserController extends BaseController {
 	@PostMapping("/batchRemove")
 	@ResponseBody
 	R batchRemove(@RequestParam("ids[]") Long[] userIds) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		int r = userService.batchremove(userIds);
 		if (r > 0) {
 			return R.ok();
@@ -169,9 +156,6 @@ public class UserController extends BaseController {
 	@PostMapping("/resetPwd")
 	@ResponseBody
 	R resetPwd(UserVO userVO) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		try{
 			userService.resetPwd(userVO,getUser());
 			return R.ok();
@@ -185,9 +169,6 @@ public class UserController extends BaseController {
 	@PostMapping("/adminResetPwd")
 	@ResponseBody
 	R adminResetPwd(UserVO userVO) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		try{
 			userService.adminResetPwd(userVO);
 			return R.ok();
@@ -220,9 +201,6 @@ public class UserController extends BaseController {
 	@ResponseBody
 	@PostMapping("/uploadImg")
 	R uploadImg(@RequestParam("avatar_file") MultipartFile file, String avatar_data, HttpServletRequest request) {
-		if ("test".equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		Map<String, Object> result = new HashMap<>();
 		try {
 			result = userService.updatePersonalImg(file, avatar_data, getUserId());
@@ -234,5 +212,33 @@ public class UserController extends BaseController {
 		}else {
 			return R.error("更新图像失败！");
 		}
+	}
+	@ResponseBody
+	@PostMapping("/updateHeadIcon")
+	public FileVo updateImg(MultipartFile file, HttpServletRequest request) {
+		FileVo fileVo = new FileVo();
+		try{
+			UserDO userDO = userService.get(getUserId());
+			String url = QiniuUtil.uploadImage(file, "upload/faceImg");
+			Map<String,String> data = new HashMap<String, String>();
+			data.put("src",url);
+			fileVo.setData(data);
+			System.out.println("保存到数据库的图片地址:"+url);
+			fileVo.setCode(0);
+			//如果修改了头像择删除原来的头像
+			QiniuUtil.deleteFile(userDO.getHeadIcon());
+			userDO.setHeadIcon(url);
+			userService.update(userDO);//保存头像
+		}catch (Exception e){
+			e.printStackTrace();
+			fileVo.setCode(1);
+		}
+		fileVo.setMsg("上传成功!");
+		return  fileVo;
+	}
+	@ResponseBody
+	@RequestMapping("/getInfo")
+	public R getInfo() {
+		return  R.ok(Constant.PATH+userService.get(getUserId()).getHeadIcon());
 	}
 }

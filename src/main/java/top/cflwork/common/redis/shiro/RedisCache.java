@@ -1,7 +1,7 @@
 package top.cflwork.common.redis.shiro;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @author cflworks 275300091@qq.com
  * @version V1.0
  */
 import java.util.ArrayList;

@@ -8,8 +8,8 @@ import java.util.Date;
 /**
  * 通知通告
  * 
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-10-05 17:11:16
  */
 public class NotifyDO implements Serializable {

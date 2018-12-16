@@ -24,8 +24,8 @@ import java.util.Map;
 /**
  * 通知通告
  *
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-10-05 17:11:16
  */
 
@@ -86,9 +86,6 @@ public class NotifyController extends BaseController {
 	@PostMapping("/save")
 	@RequiresPermissions("oa:notify:add")
 	public R save(NotifyDO notify) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		notify.setCreateBy(getUserId());
 		if (notifyService.save(notify) > 0) {
 			return R.ok();
@@ -103,9 +100,6 @@ public class NotifyController extends BaseController {
 	@RequestMapping("/update")
 	@RequiresPermissions("oa:notify:edit")
 	public R update(NotifyDO notify) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		notifyService.update(notify);
 		return R.ok();
 	}
@@ -117,9 +111,6 @@ public class NotifyController extends BaseController {
 	@ResponseBody
 	@RequiresPermissions("oa:notify:remove")
 	public R remove(Long id) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (notifyService.remove(id) > 0) {
 			return R.ok();
 		}
@@ -133,9 +124,6 @@ public class NotifyController extends BaseController {
 	@ResponseBody
 	@RequiresPermissions("oa:notify:batchRemove")
 	public R remove(@RequestParam("ids[]") Long[] ids) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		notifyService.batchRemove(ids);
 		return R.ok();
 	}

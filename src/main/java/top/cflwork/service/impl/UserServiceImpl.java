@@ -1,6 +1,6 @@
 package top.cflwork.service.impl;
 
-import top.cflwork.config.BootdoConfig;
+import top.cflwork.config.CflworksConfig;
 import top.cflwork.util.*;
 import top.cflwork.dao.DeptDao;
 import top.cflwork.dao.UserDao;
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private FileService sysFileService;
     @Autowired
-    private BootdoConfig bootdoConfig;
+    private CflworksConfig cflworksConfig;
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
     @Override
@@ -221,18 +221,16 @@ public class UserServiceImpl implements UserService {
             boolean flag = ImageIO.write(rotateImage, prefix, out);
             //转换后存入数据库
             byte[] b = out.toByteArray();
-            FileUtil.uploadFile(b, bootdoConfig.getUploadPath(), fileName);
+            FileUtil.uploadFile(b, cflworksConfig.getUploadPath(), fileName);
         } catch (Exception e) {
             throw new Exception("图片裁剪错误！！");
         }
         Map<String, Object> result = new HashMap<>();
-        if (sysFileService.save(sysFile) > 0) {
-            UserDO userDO = new UserDO();
-            userDO.setUserId(userId);
-            userDO.setPicId(sysFile.getId());
-            if (userMapper.update(userDO) > 0) {
-                result.put("url", sysFile.getUrl());
-            }
+        UserDO userDO = new UserDO();
+        userDO.setUserId(userId);
+        userDO.setHeadIcon(sysFile.getUrl());
+        if (userMapper.update(userDO) > 0) {
+            result.put("url", sysFile.getUrl());
         }
         return result;
     }

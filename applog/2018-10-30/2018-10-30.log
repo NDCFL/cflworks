@@ -1,17 +1,17 @@
-2018-10-30 10:43:36 -Starting BootdoApplication on DESKTOP-9BL6UMN with PID 11004 (F:\idea\bootdo\target\classes started by DELL in F:\idea\bootdo)
+2018-10-30 10:43:36 -Starting CflworksApplication on DESKTOP-9BL6UMN with PID 11004 (F:\idea\cflworks\target\classes started by DELL in F:\idea\cflworks)
 2018-10-30 10:43:36 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 2018-10-30 10:43:36 -The following profiles are active: dev
 2018-10-30 10:43:36 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65c7a252: startup date [Tue Oct 30 10:43:36 CST 2018]; root of context hierarchy
 2018-10-30 10:43:38 -Multiple Spring Data modules found, entering strict repository configuration mode!
 2018-10-30 10:43:38 -Bean 'com.alicp.jetcache.anno.config.JetCacheProxyConfiguration' of type [com.alicp.jetcache.anno.config.JetCacheProxyConfiguration$$EnhancerBySpringCGLIB$$6e4d68ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:43:38 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$61e5a595] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:43:38 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$543ed43c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:43:38 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:43:38 -Bean 'shiroConfig' of type [com.cflworks.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$543ed43c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:43:38 -Bean 'userRealm' of type [com.cflworks.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:43:38 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DELL/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
 2018-10-30 10:43:39 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:43:39 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:43:39 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
-2018-10-30 10:43:39 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2018-10-30 10:43:39 -Cache with name 'com.cflworks.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-10-30 10:43:39 -Added EhCache named [com.cflworks.system.shiro.UserRealm.authorizationCache]
 2018-10-30 10:43:39 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:43:39 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:43:39 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -32,7 +32,7 @@
 2018-10-30 10:43:39 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
 2018-10-30 10:43:39 -Servlet statViewServlet mapped to [/druid/*]
 2018-10-30 10:43:39 -Servlet dispatcherServlet mapped to [/]
-2018-10-30 10:43:41 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+2018-10-30 10:43:41 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 2018-10-30 10:43:41 -Stopping service [Tomcat]
@@ -40,7 +40,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2018-10-30 10:43:41 -Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
@@ -62,8 +62,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.bootdo.BootdoApplication.main(BootdoApplication.java:28)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at com.cflworks.CflworksApplication.main(CflworksApplication.java:28)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
@@ -81,7 +81,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
 	... 19 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
@@ -100,7 +100,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
 	... 32 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
@@ -119,7 +119,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
 	... 46 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708)
@@ -188,20 +188,20 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
 	... 101 common frames omitted
-2018-10-30 10:44:10 -Starting BootdoApplication on DESKTOP-9BL6UMN with PID 9180 (F:\idea\bootdo\target\classes started by DELL in F:\idea\bootdo)
+2018-10-30 10:44:10 -Starting CflworksApplication on DESKTOP-9BL6UMN with PID 9180 (F:\idea\cflworks\target\classes started by DELL in F:\idea\cflworks)
 2018-10-30 10:44:10 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 2018-10-30 10:44:10 -The following profiles are active: dev
 2018-10-30 10:44:10 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a942c18: startup date [Tue Oct 30 10:44:10 CST 2018]; root of context hierarchy
 2018-10-30 10:44:11 -Multiple Spring Data modules found, entering strict repository configuration mode!
 2018-10-30 10:44:11 -Bean 'com.alicp.jetcache.anno.config.JetCacheProxyConfiguration' of type [com.alicp.jetcache.anno.config.JetCacheProxyConfiguration$$EnhancerBySpringCGLIB$$87eaa4ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:11 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b82e196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:44:11 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$6ddc103d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:44:11 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:44:11 -Bean 'shiroConfig' of type [com.cflworks.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$6ddc103d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:44:11 -Bean 'userRealm' of type [com.cflworks.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:11 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DELL/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
 2018-10-30 10:44:12 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:12 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:44:12 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
-2018-10-30 10:44:12 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2018-10-30 10:44:12 -Cache with name 'com.cflworks.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-10-30 10:44:12 -Added EhCache named [com.cflworks.system.shiro.UserRealm.authorizationCache]
 2018-10-30 10:44:12 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:12 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:12 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -222,7 +222,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2018-10-30 10:44:12 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
 2018-10-30 10:44:12 -Servlet statViewServlet mapped to [/druid/*]
 2018-10-30 10:44:12 -Servlet dispatcherServlet mapped to [/]
-2018-10-30 10:44:13 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+2018-10-30 10:44:13 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 2018-10-30 10:44:13 -Stopping service [Tomcat]
@@ -230,7 +230,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2018-10-30 10:44:13 -Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
@@ -252,8 +252,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.bootdo.BootdoApplication.main(BootdoApplication.java:28)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at com.cflworks.CflworksApplication.main(CflworksApplication.java:28)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
@@ -271,7 +271,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
 	... 19 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
@@ -290,7 +290,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
 	... 32 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/cflworks/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
@@ -309,7 +309,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
 	... 46 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/cflworks/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708)
@@ -378,20 +378,20 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
 	... 101 common frames omitted
-2018-10-30 10:44:48 -Starting BootdoApplication on DESKTOP-9BL6UMN with PID 26924 (F:\idea\bootdo\target\classes started by DELL in F:\idea\bootdo)
+2018-10-30 10:44:48 -Starting CflworksApplication on DESKTOP-9BL6UMN with PID 26924 (F:\idea\cflworks\target\classes started by DELL in F:\idea\cflworks)
 2018-10-30 10:44:48 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 2018-10-30 10:44:48 -The following profiles are active: dev
 2018-10-30 10:44:48 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e350b40: startup date [Tue Oct 30 10:44:48 CST 2018]; root of context hierarchy
 2018-10-30 10:44:49 -Multiple Spring Data modules found, entering strict repository configuration mode!
 2018-10-30 10:44:49 -Bean 'com.alicp.jetcache.anno.config.JetCacheProxyConfiguration' of type [com.alicp.jetcache.anno.config.JetCacheProxyConfiguration$$EnhancerBySpringCGLIB$$58a52d47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:50 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4c3d6a30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:44:50 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$3e9698d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:44:50 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:44:50 -Bean 'shiroConfig' of type [com.cflworks.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$3e9698d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:44:50 -Bean 'userRealm' of type [com.cflworks.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:50 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DELL/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
 2018-10-30 10:44:50 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:50 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-10-30 10:44:50 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
-2018-10-30 10:44:50 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2018-10-30 10:44:50 -Cache with name 'com.cflworks.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-10-30 10:44:50 -Added EhCache named [com.cflworks.system.shiro.UserRealm.authorizationCache]
 2018-10-30 10:44:50 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:50 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-10-30 10:44:50 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -428,175 +428,175 @@ Caused by: java.net.ConnectException: Connection refused: connect
 
 2018-10-30 10:44:53 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
 2018-10-30 10:44:53 -Quartz scheduler version: 2.2.1
-2018-10-30 10:44:53 -JobFactory set to: com.bootdo.common.quartz.factory.JobFactory@176333ee
+2018-10-30 10:44:53 -JobFactory set to: com.cflworks.common.quartz.factory.JobFactory@176333ee
 2018-10-30 10:44:53 -Initializing ExecutorService  'clientInboundChannelExecutor'
 2018-10-30 10:44:53 -Initializing ExecutorService  'clientOutboundChannelExecutor'
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.remove(java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ModelController.list(int,int)
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.batchRemove(java.lang.String[])
-2018-10-30 10:44:53 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ModelController.model()
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/add]}" onto public void com.bootdo.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.bootdo.activiti.controller.ModelController.getEditorJson(java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.bootdo.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.bootdo.activiti.controller.ModelController.getStencilset()
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
-2018-10-30 10:44:53 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.add()
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.remove(java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ProcessController.list(int,int)
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.batchRemove(java.lang.String[])
-2018-10-30 10:44:53 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.process()
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.bootdo.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-10-30 10:44:53 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
-2018-10-30 10:44:53 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.add()
-2018-10-30 10:44:53 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String[])
-2018-10-30 10:44:53 -Mapped "{[/act/salary/update]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.update(com.bootdo.activiti.domain.SalaryDO)
-2018-10-30 10:44:53 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.saveOrUpdate(com.bootdo.activiti.domain.SalaryDO)
-2018-10-30 10:44:53 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.Salary()
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.TaskController.list(int,int)
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.todo()
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.bootdo.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.gotoTask()
-2018-10-30 10:44:53 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.bootdo.activiti.vo.TaskVO> com.bootdo.activiti.controller.TaskController.todoList()
-2018-10-30 10:44:53 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.blog()
-2018-10-30 10:44:53 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.add()
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/update]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.update(com.bootdo.blog.domain.ContentDO)
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.save(com.bootdo.blog.domain.ContentDO)
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.bContent()
-2018-10-30 10:44:53 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.add()
-2018-10-30 10:44:53 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/common/dict/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.update(com.bootdo.common.domain.DictDO)
-2018-10-30 10:44:53 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.save(com.bootdo.common.domain.DictDO)
-2018-10-30 10:44:53 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listType()
-2018-10-30 10:44:53 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.dict()
-2018-10-30 10:44:53 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listByType(java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.add()
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.update(com.bootdo.common.domain.FileDO)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.save(com.bootdo.common.domain.FileDO)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.info(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
-2018-10-30 10:44:53 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.sysFile(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.common.controller.GeneratorController.list()
-2018-10-30 10:44:53 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.bootdo.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
-2018-10-30 10:44:53 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.GeneratorController.generator()
-2018-10-30 10:44:53 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.bootdo.common.controller.GeneratorController.edit(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/common/generator/batchCode]}" onto public void com.bootdo.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
-2018-10-30 10:44:53 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.add()
-2018-10-30 10:44:53 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.update(com.bootdo.common.domain.TaskDO)
-2018-10-30 10:44:53 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.save(com.bootdo.common.domain.TaskDO)
-2018-10-30 10:44:53 -Mapped "{[/common/job/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.info(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.taskScheduleJob()
-2018-10-30 10:44:53 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.LogController.log()
-2018-10-30 10:44:53 -Mapped "{[/common/log/list],methods=[GET]}" onto com.bootdo.common.domain.PageDO<com.bootdo.common.domain.LogDO> com.bootdo.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.batchRemove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/error]}" onto public com.bootdo.common.utils.R com.bootdo.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-10-30 10:44:53 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.add()
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/update]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.update(com.bootdo.oa.domain.NotifyDO)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.save(com.bootdo.oa.domain.NotifyDO)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.message()
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.selefNotify()
-2018-10-30 10:44:53 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.oaNotify()
-2018-10-30 10:44:53 -Mapped "{[/system/book/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.BookController.add()
-2018-10-30 10:44:53 -Mapped "{[/system/book/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.BookController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/system/book/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.BookController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/system/book/update]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.BookController.update(com.bootdo.system.domain.BookDO)
-2018-10-30 10:44:53 -Mapped "{[/system/book/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.system.controller.BookController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/system/book/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.BookController.save(com.bootdo.system.domain.BookDO)
-2018-10-30 10:44:53 -Mapped "{[/system/book/downLoad]}" onto public void com.bootdo.system.controller.BookController.pdfDownLoad(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-10-30 10:44:53 -Mapped "{[/system/book],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.BookController.Book()
-2018-10-30 10:44:53 -Mapped "{[/system/book/lookDoc]}" onto public void com.bootdo.system.controller.BookController.word(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-10-30 10:44:53 -Mapped "{[/system/book/lookPpt]}" onto public void com.bootdo.system.controller.BookController.lookPpt(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-10-30 10:44:53 -Mapped "{[/system/book/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.BookController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/update]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.update(com.bootdo.system.domain.DeptDO)
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.list()
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/save]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.save(com.bootdo.system.domain.DeptDO)
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.tree()
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.dept()
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.treeView()
-2018-10-30 10:44:53 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
-2018-10-30 10:44:53 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.logout()
-2018-10-30 10:44:53 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/login],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
-2018-10-30 10:44:53 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.login()
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.update(com.bootdo.system.domain.MenuDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.save(com.bootdo.system.domain.MenuDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree()
-2018-10-30 10:44:53 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.menu(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.add()
-2018-10-30 10:44:53 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.update(com.bootdo.system.domain.RoleDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.bootdo.system.domain.RoleDO> com.bootdo.system.controller.RoleController.list()
-2018-10-30 10:44:53 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(com.bootdo.system.domain.RoleDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.batchRemove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.role()
-2018-10-30 10:44:53 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.bootdo.system.domain.UserOnline> com.bootdo.system.controller.SessionController.list()
-2018-10-30 10:44:53 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.bootdo.system.controller.SessionController.online()
-2018-10-30 10:44:53 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.bootdo.system.controller.SessionController.sessionList()
-2018-10-30 10:44:53 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.bootdo.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.add(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.remove(java.lang.Long)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.update(com.bootdo.system.domain.UserDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.save(com.bootdo.system.domain.UserDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.batchRemove(java.lang.Long[])
-2018-10-30 10:44:53 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.UserController.tree()
-2018-10-30 10:44:53 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.user(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.treeView()
-2018-10-30 10:44:53 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.adminResetPwd(com.bootdo.system.vo.UserVO)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.updatePeronal(com.bootdo.system.domain.UserDO)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.personal(org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.resetPwd(com.bootdo.system.vo.UserVO)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
-2018-10-30 10:44:53 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ModelController.remove(java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.ModelController.list(int,int)
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2018-10-30 10:44:53 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.ModelController.model()
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/add]}" onto public void com.cflworks.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.cflworks.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.cflworks.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.cflworks.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.cflworks.activiti.controller.ModelController.getStencilset()
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2018-10-30 10:44:53 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.cflworks.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.ProcessController.add()
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.remove(java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.ProcessController.list(int,int)
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2018-10-30 10:44:53 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.ProcessController.process()
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.cflworks.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-30 10:44:53 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-10-30 10:44:53 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.cflworks.activiti.controller.SalaryController.add()
+2018-10-30 10:44:53 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.remove(java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.remove(java.lang.String[])
+2018-10-30 10:44:53 -Mapped "{[/act/salary/update]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.update(com.cflworks.activiti.domain.SalaryDO)
+2018-10-30 10:44:53 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.cflworks.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.saveOrUpdate(com.cflworks.activiti.domain.SalaryDO)
+2018-10-30 10:44:53 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.cflworks.activiti.controller.SalaryController.Salary()
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.cflworks.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.TaskController.list(int,int)
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.cflworks.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.TaskController.todo()
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.cflworks.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.TaskController.gotoTask()
+2018-10-30 10:44:53 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.cflworks.activiti.vo.TaskVO> com.cflworks.activiti.controller.TaskController.todoList()
+2018-10-30 10:44:53 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.BlogController.blog()
+2018-10-30 10:44:53 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.ContentController.add()
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/update]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.update(com.cflworks.blog.domain.ContentDO)
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.save(com.cflworks.blog.domain.ContentDO)
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.ContentController.bContent()
+2018-10-30 10:44:53 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.add()
+2018-10-30 10:44:53 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/common/dict/update]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.update(com.cflworks.common.domain.DictDO)
+2018-10-30 10:44:53 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.save(com.cflworks.common.domain.DictDO)
+2018-10-30 10:44:53 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.cflworks.common.domain.DictDO> com.cflworks.common.controller.DictController.listType()
+2018-10-30 10:44:53 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.dict()
+2018-10-30 10:44:53 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.cflworks.common.domain.DictDO> com.cflworks.common.controller.DictController.listByType(java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.FileController.add()
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/update]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.update(com.cflworks.common.domain.FileDO)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.save(com.cflworks.common.domain.FileDO)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.info(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-10-30 10:44:53 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.cflworks.common.controller.GeneratorController.list()
+2018-10-30 10:44:53 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.cflworks.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-10-30 10:44:53 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.GeneratorController.generator()
+2018-10-30 10:44:53 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.cflworks.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/common/generator/batchCode]}" onto public void com.cflworks.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-10-30 10:44:53 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.JobController.add()
+2018-10-30 10:44:53 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.update(com.cflworks.common.domain.TaskDO)
+2018-10-30 10:44:53 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.save(com.cflworks.common.domain.TaskDO)
+2018-10-30 10:44:53 -Mapped "{[/common/job/info/{id}]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.info(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.JobController.taskScheduleJob()
+2018-10-30 10:44:53 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.LogController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.LogController.log()
+2018-10-30 10:44:53 -Mapped "{[/common/log/list],methods=[GET]}" onto com.cflworks.common.domain.PageDO<com.cflworks.common.domain.LogDO> com.cflworks.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/error]}" onto public com.cflworks.common.utils.R com.cflworks.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 10:44:53 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.cflworks.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.add()
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/update]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.update(com.cflworks.oa.domain.NotifyDO)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.save(com.cflworks.oa.domain.NotifyDO)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.oa.controller.NotifyController.message()
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.selefNotify()
+2018-10-30 10:44:53 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.oaNotify()
+2018-10-30 10:44:53 -Mapped "{[/system/book/add],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.BookController.add()
+2018-10-30 10:44:53 -Mapped "{[/system/book/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.BookController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/system/book/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.BookController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/system/book/update]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.BookController.update(com.cflworks.system.domain.BookDO)
+2018-10-30 10:44:53 -Mapped "{[/system/book/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.system.controller.BookController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/system/book/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.BookController.save(com.cflworks.system.domain.BookDO)
+2018-10-30 10:44:53 -Mapped "{[/system/book/downLoad]}" onto public void com.cflworks.system.controller.BookController.pdfDownLoad(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 10:44:53 -Mapped "{[/system/book],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.BookController.Book()
+2018-10-30 10:44:53 -Mapped "{[/system/book/lookDoc]}" onto public void com.cflworks.system.controller.BookController.word(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-30 10:44:53 -Mapped "{[/system/book/lookPpt]}" onto public void com.cflworks.system.controller.BookController.lookPpt(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-30 10:44:53 -Mapped "{[/system/book/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.BookController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.remove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/update]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.update(com.cflworks.system.domain.DeptDO)
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.cflworks.system.domain.DeptDO> com.cflworks.system.controller.DeptController.list()
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/save]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.save(com.cflworks.system.domain.DeptDO)
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.cflworks.common.domain.Tree<com.cflworks.system.domain.DeptDO> com.cflworks.system.controller.DeptController.tree()
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.dept()
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.treeView()
+2018-10-30 10:44:53 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.main()
+2018-10-30 10:44:53 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.logout()
+2018-10-30 10:44:53 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/login],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-10-30 10:44:53 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.login()
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.MenuController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.MenuController.update(com.cflworks.system.domain.MenuDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.cflworks.system.domain.MenuDO> com.cflworks.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.MenuController.save(com.cflworks.system.domain.MenuDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.cflworks.common.domain.Tree<com.cflworks.system.domain.MenuDO> com.cflworks.system.controller.MenuController.tree(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.cflworks.common.domain.Tree<com.cflworks.system.domain.MenuDO> com.cflworks.system.controller.MenuController.tree()
+2018-10-30 10:44:53 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.RoleController.add()
+2018-10-30 10:44:53 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.update(com.cflworks.system.domain.RoleDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.cflworks.system.domain.RoleDO> com.cflworks.system.controller.RoleController.list()
+2018-10-30 10:44:53 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.save(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.save(com.cflworks.system.domain.RoleDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.RoleController.role()
+2018-10-30 10:44:53 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.cflworks.system.domain.UserOnline> com.cflworks.system.controller.SessionController.list()
+2018-10-30 10:44:53 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.cflworks.system.controller.SessionController.online()
+2018-10-30 10:44:53 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.cflworks.system.controller.SessionController.sessionList()
+2018-10-30 10:44:53 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.cflworks.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.add(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.remove(java.lang.Long)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.update(com.cflworks.system.domain.UserDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.save(com.cflworks.system.domain.UserDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-10-30 10:44:53 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.cflworks.common.domain.Tree<com.cflworks.system.domain.DeptDO> com.cflworks.system.controller.UserController.tree()
+2018-10-30 10:44:53 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.user(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.treeView()
+2018-10-30 10:44:53 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.adminResetPwd(com.cflworks.system.vo.UserVO)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.updatePeronal(com.cflworks.system.domain.UserDO)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.personal(org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.resetPwd(com.cflworks.system.vo.UserVO)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-10-30 10:44:53 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
 2018-10-30 10:44:54 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
 2018-10-30 10:44:54 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
 2018-10-30 10:44:54 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
@@ -775,7 +775,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2018-10-30 10:44:56 -Starting ProtocolHandler ["http-nio-8088"]
 2018-10-30 10:44:56 -Using a shared selector for servlet write/read
 2018-10-30 10:44:56 -Tomcat started on port(s): 8088 (http) with context path ''
-2018-10-30 10:44:56 -Started BootdoApplication in 8.802 seconds (JVM running for 9.534)
+2018-10-30 10:44:56 -Started CflworksApplication in 8.802 seconds (JVM running for 9.534)
 2018-10-30 10:44:56 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
 2018-10-30 10:44:56 -==> Parameters: 
 2018-10-30 10:44:56 -<==      Total: 3
@@ -790,25 +790,25 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:06 -Enabling session validation scheduler...
 2018-10-30 10:45:06 -请求地址 : http://localhost:8088/
 2018-10-30 10:45:06 -HTTP METHOD : GET
-2018-10-30 10:45:06 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-10-30 10:45:06 -CLASS_METHOD : com.cflworks.system.controller.LoginController.welcome
 2018-10-30 10:45:06 -参数 : [{}]
 2018-10-30 10:45:06 -耗时 : 2
 2018-10-30 10:45:06 -返回值 : redirect:/blog
 2018-10-30 10:45:06 -请求地址 : http://localhost:8088/blog
 2018-10-30 10:45:06 -HTTP METHOD : GET
-2018-10-30 10:45:06 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2018-10-30 10:45:06 -CLASS_METHOD : com.cflworks.blog.controller.BlogController.blog
 2018-10-30 10:45:06 -参数 : []
 2018-10-30 10:45:06 -耗时 : 0
 2018-10-30 10:45:06 -返回值 : blog/index/main
 2018-10-30 10:45:07 -请求地址 : http://localhost:8088/blog/open/list
 2018-10-30 10:45:07 -HTTP METHOD : GET
-2018-10-30 10:45:07 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2018-10-30 10:45:07 -CLASS_METHOD : com.cflworks.blog.controller.BlogController.opentList
 2018-10-30 10:45:07 -参数 : [{type=article, limit=10, offset=0}]
 2018-10-30 10:45:07 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
 2018-10-30 10:45:07 -==> Parameters: article(String)
 2018-10-30 10:45:07 -请求地址 : http://localhost:8088/login;JSESSIONID=83083381-1642-425e-9d0a-dd243428e3bc
 2018-10-30 10:45:07 -HTTP METHOD : GET
-2018-10-30 10:45:07 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 10:45:07 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 10:45:07 -参数 : []
 2018-10-30 10:45:07 -耗时 : 1
 2018-10-30 10:45:07 -返回值 : login
@@ -817,22 +817,22 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:07 -==> Parameters: article(String)
 2018-10-30 10:45:07 -<==      Total: 1
 2018-10-30 10:45:07 -耗时 : 97
-2018-10-30 10:45:07 -返回值 : com.bootdo.common.utils.PageUtils@4bcb45ea
+2018-10-30 10:45:07 -返回值 : com.cflworks.common.utils.PageUtils@4bcb45ea
 2018-10-30 10:45:08 -请求地址 : http://localhost:8088/login
 2018-10-30 10:45:08 -HTTP METHOD : GET
-2018-10-30 10:45:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 10:45:08 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 10:45:08 -参数 : []
 2018-10-30 10:45:08 -耗时 : 0
 2018-10-30 10:45:08 -返回值 : login
 2018-10-30 10:45:08 -请求地址 : http://localhost:8088/login
 2018-10-30 10:45:08 -HTTP METHOD : GET
-2018-10-30 10:45:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 10:45:08 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 10:45:08 -参数 : []
 2018-10-30 10:45:08 -耗时 : 0
 2018-10-30 10:45:08 -返回值 : login
 2018-10-30 10:45:09 -请求地址 : http://localhost:8088/login
 2018-10-30 10:45:09 -HTTP METHOD : POST
-2018-10-30 10:45:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-10-30 10:45:09 -CLASS_METHOD : com.cflworks.system.controller.LoginController.ajaxLogin
 2018-10-30 10:45:09 -参数 : [admin, 111111]
 2018-10-30 10:45:09 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
 2018-10-30 10:45:09 -==> Parameters: admin(String)
@@ -841,10 +841,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:09 -返回值 : {msg=操作成功, code=0}
 2018-10-30 10:45:09 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
 2018-10-30 10:45:09 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2018-10-30 10:45:09 -==> Parameters: 1(Long), admin(String), 登录(String), 58(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-10-30 10:45:09.948(Timestamp)
+2018-10-30 10:45:09 -==> Parameters: 1(Long), admin(String), 登录(String), 58(Integer), com.cflworks.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-10-30 10:45:09.948(Timestamp)
 2018-10-30 10:45:09 -请求地址 : http://localhost:8088/index
 2018-10-30 10:45:09 -HTTP METHOD : GET
-2018-10-30 10:45:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-10-30 10:45:09 -CLASS_METHOD : com.cflworks.system.controller.LoginController.index
 2018-10-30 10:45:09 -参数 : [{}]
 2018-10-30 10:45:09 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
 2018-10-30 10:45:09 -==> Parameters: 1(Long)
@@ -856,23 +856,23 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:10 -耗时 : 166
 2018-10-30 10:45:10 -返回值 : index_v1
 2018-10-30 10:45:10 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2018-10-30 10:45:10 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 166(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-10-30 10:45:10.157(Timestamp)
+2018-10-30 10:45:10 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 166(Integer), com.cflworks.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-10-30 10:45:10.157(Timestamp)
 2018-10-30 10:45:10 -<==    Updates: 1
 2018-10-30 10:45:10 -请求地址 : http://localhost:8088/main
 2018-10-30 10:45:10 -HTTP METHOD : GET
-2018-10-30 10:45:10 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-10-30 10:45:10 -CLASS_METHOD : com.cflworks.system.controller.LoginController.main
 2018-10-30 10:45:10 -参数 : []
 2018-10-30 10:45:10 -耗时 : 0
 2018-10-30 10:45:10 -返回值 : main
 2018-10-30 10:45:10 -请求地址 : http://localhost:8088/oa/notify/message
 2018-10-30 10:45:10 -HTTP METHOD : GET
-2018-10-30 10:45:10 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-10-30 10:45:10 -CLASS_METHOD : com.cflworks.oa.controller.NotifyController.message
 2018-10-30 10:45:10 -参数 : []
 2018-10-30 10:45:10 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
 2018-10-30 10:45:10 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
 2018-10-30 10:45:10 -请求地址 : http://localhost:8088/main
 2018-10-30 10:45:10 -HTTP METHOD : GET
-2018-10-30 10:45:10 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-10-30 10:45:10 -CLASS_METHOD : com.cflworks.system.controller.LoginController.main
 2018-10-30 10:45:10 -参数 : []
 2018-10-30 10:45:10 -耗时 : 0
 2018-10-30 10:45:10 -返回值 : main
@@ -881,19 +881,19 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:10 -==> Parameters: 1(Long), 0(String)
 2018-10-30 10:45:10 -<==      Total: 1
 2018-10-30 10:45:10 -耗时 : 66
-2018-10-30 10:45:10 -返回值 : com.bootdo.common.utils.PageUtils@35bd7437
+2018-10-30 10:45:10 -返回值 : com.cflworks.common.utils.PageUtils@35bd7437
 2018-10-30 10:45:12 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
 2018-10-30 10:45:12 -==> Parameters: 1(Long)
 2018-10-30 10:45:12 -<==      Total: 52
 2018-10-30 10:45:13 -请求地址 : http://localhost:8088/system/book
 2018-10-30 10:45:13 -HTTP METHOD : GET
-2018-10-30 10:45:13 -CLASS_METHOD : com.bootdo.system.controller.BookController.Book
+2018-10-30 10:45:13 -CLASS_METHOD : com.cflworks.system.controller.BookController.Book
 2018-10-30 10:45:13 -参数 : []
 2018-10-30 10:45:13 -耗时 : 0
 2018-10-30 10:45:13 -返回值 : system/book/book
 2018-10-30 10:45:13 -请求地址 : http://localhost:8088/system/book/list
 2018-10-30 10:45:13 -HTTP METHOD : GET
-2018-10-30 10:45:13 -CLASS_METHOD : com.bootdo.system.controller.BookController.list
+2018-10-30 10:45:13 -CLASS_METHOD : com.cflworks.system.controller.BookController.list
 2018-10-30 10:45:13 -参数 : [{limit=10, offset=0}]
 2018-10-30 10:45:13 -==>  Preparing: select `id`,`book_name`,`book_imei`,`author`,`public_time`,`create_time` from sys_book order by id desc limit ?, ? 
 2018-10-30 10:45:13 -==> Parameters: 0(Integer), 10(Integer)
@@ -902,16 +902,16 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:13 -==> Parameters: 
 2018-10-30 10:45:13 -<==      Total: 1
 2018-10-30 10:45:13 -耗时 : 56
-2018-10-30 10:45:13 -返回值 : com.bootdo.common.utils.PageUtils@66a1476d
+2018-10-30 10:45:13 -返回值 : com.cflworks.common.utils.PageUtils@66a1476d
 2018-10-30 10:45:16 -请求地址 : http://localhost:8088/oa/notify
 2018-10-30 10:45:16 -HTTP METHOD : GET
-2018-10-30 10:45:16 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.oaNotify
+2018-10-30 10:45:16 -CLASS_METHOD : com.cflworks.oa.controller.NotifyController.oaNotify
 2018-10-30 10:45:16 -参数 : []
 2018-10-30 10:45:16 -耗时 : 0
 2018-10-30 10:45:16 -返回值 : oa/notify/notify
 2018-10-30 10:45:17 -请求地址 : http://localhost:8088/oa/notify/list
 2018-10-30 10:45:17 -HTTP METHOD : GET
-2018-10-30 10:45:17 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.list
+2018-10-30 10:45:17 -CLASS_METHOD : com.cflworks.oa.controller.NotifyController.list
 2018-10-30 10:45:17 -参数 : [{limit=10, offset=0}]
 2018-10-30 10:45:17 -==>  Preparing: select `id`,`type`,`title`,`content`,`files`,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify order by id desc limit ?, ? 
 2018-10-30 10:45:17 -==> Parameters: 0(Integer), 10(Integer)
@@ -935,16 +935,16 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:17 -==> Parameters: 
 2018-10-30 10:45:17 -<==      Total: 1
 2018-10-30 10:45:17 -耗时 : 61
-2018-10-30 10:45:17 -返回值 : com.bootdo.common.utils.PageUtils@feb634
+2018-10-30 10:45:17 -返回值 : com.cflworks.common.utils.PageUtils@feb634
 2018-10-30 10:45:21 -请求地址 : http://localhost:8088/common/sysFile
 2018-10-30 10:45:21 -HTTP METHOD : GET
-2018-10-30 10:45:21 -CLASS_METHOD : com.bootdo.common.controller.FileController.sysFile
+2018-10-30 10:45:21 -CLASS_METHOD : com.cflworks.common.controller.FileController.sysFile
 2018-10-30 10:45:21 -参数 : [{}]
 2018-10-30 10:45:21 -耗时 : 1
 2018-10-30 10:45:21 -返回值 : common/file/file
 2018-10-30 10:45:21 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:45:21 -HTTP METHOD : GET
-2018-10-30 10:45:21 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:45:21 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:45:21 -参数 : [{limit=12, offset=0, type=}]
 2018-10-30 10:45:21 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
 2018-10-30 10:45:21 -==> Parameters: 0(Integer), 12(Integer)
@@ -953,14 +953,14 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:45:21 -==> Parameters: 
 2018-10-30 10:45:21 -<==      Total: 1
 2018-10-30 10:45:21 -耗时 : 6
-2018-10-30 10:45:21 -返回值 : com.bootdo.common.utils.PageUtils@475872c
+2018-10-30 10:45:21 -返回值 : com.cflworks.common.utils.PageUtils@475872c
 2018-10-30 10:45:54 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 10]
 2018-10-30 10:49:15 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
 2018-10-30 10:49:15 -==> Parameters: 1(Long)
 2018-10-30 10:49:15 -<==      Total: 52
 2018-10-30 10:49:15 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:49:15 -HTTP METHOD : GET
-2018-10-30 10:49:15 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:49:15 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:49:15 -参数 : [{limit=12, offset=0, type=99}]
 2018-10-30 10:49:15 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:49:15 -==> Parameters: 99(String), 0(Integer), 12(Integer)
@@ -969,10 +969,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:49:15 -==> Parameters: 99(String)
 2018-10-30 10:49:15 -<==      Total: 1
 2018-10-30 10:49:15 -耗时 : 6
-2018-10-30 10:49:15 -返回值 : com.bootdo.common.utils.PageUtils@70a15e1b
+2018-10-30 10:49:15 -返回值 : com.cflworks.common.utils.PageUtils@70a15e1b
 2018-10-30 10:49:34 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:49:34 -HTTP METHOD : GET
-2018-10-30 10:49:34 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:49:34 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:49:34 -参数 : [{limit=12, offset=0, type=1}]
 2018-10-30 10:49:34 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:49:34 -==> Parameters: 1(String), 0(Integer), 12(Integer)
@@ -981,10 +981,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:49:34 -==> Parameters: 1(String)
 2018-10-30 10:49:34 -<==      Total: 1
 2018-10-30 10:49:34 -耗时 : 3
-2018-10-30 10:49:34 -返回值 : com.bootdo.common.utils.PageUtils@7b1cf932
+2018-10-30 10:49:34 -返回值 : com.cflworks.common.utils.PageUtils@7b1cf932
 2018-10-30 10:49:34 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:49:34 -HTTP METHOD : GET
-2018-10-30 10:49:34 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:49:34 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:49:34 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:49:34 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:49:34 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -993,10 +993,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:49:34 -==> Parameters: 0(String)
 2018-10-30 10:49:34 -<==      Total: 1
 2018-10-30 10:49:34 -耗时 : 3
-2018-10-30 10:49:34 -返回值 : com.bootdo.common.utils.PageUtils@2c78b5fc
+2018-10-30 10:49:34 -返回值 : com.cflworks.common.utils.PageUtils@2c78b5fc
 2018-10-30 10:49:35 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:49:35 -HTTP METHOD : GET
-2018-10-30 10:49:35 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:49:35 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:49:35 -参数 : [{limit=12, offset=0, type=}]
 2018-10-30 10:49:35 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
 2018-10-30 10:49:35 -==> Parameters: 0(Integer), 12(Integer)
@@ -1005,10 +1005,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:49:35 -==> Parameters: 
 2018-10-30 10:49:35 -<==      Total: 1
 2018-10-30 10:49:35 -耗时 : 4
-2018-10-30 10:49:35 -返回值 : com.bootdo.common.utils.PageUtils@7596d544
+2018-10-30 10:49:35 -返回值 : com.cflworks.common.utils.PageUtils@7596d544
 2018-10-30 10:49:36 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:49:37 -HTTP METHOD : GET
-2018-10-30 10:49:37 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:49:37 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:49:37 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:49:37 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:49:37 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -1017,13 +1017,13 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:49:37 -==> Parameters: 0(String)
 2018-10-30 10:49:37 -<==      Total: 1
 2018-10-30 10:49:37 -耗时 : 390
-2018-10-30 10:49:37 -返回值 : com.bootdo.common.utils.PageUtils@4878c03d
+2018-10-30 10:49:37 -返回值 : com.cflworks.common.utils.PageUtils@4878c03d
 2018-10-30 10:54:46 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
 2018-10-30 10:54:46 -==> Parameters: 1(Long)
 2018-10-30 10:54:46 -<==      Total: 52
 2018-10-30 10:54:46 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:54:46 -HTTP METHOD : GET
-2018-10-30 10:54:46 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:54:46 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:54:46 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:54:46 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:54:46 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -1032,10 +1032,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:54:46 -==> Parameters: 0(String)
 2018-10-30 10:54:46 -<==      Total: 1
 2018-10-30 10:54:46 -耗时 : 3
-2018-10-30 10:54:46 -返回值 : com.bootdo.common.utils.PageUtils@5b459061
+2018-10-30 10:54:46 -返回值 : com.cflworks.common.utils.PageUtils@5b459061
 2018-10-30 10:54:48 -请求地址 : http://localhost:8088/common/sysFile/upload
 2018-10-30 10:54:48 -HTTP METHOD : POST
-2018-10-30 10:54:48 -CLASS_METHOD : com.bootdo.common.controller.FileController.upload
+2018-10-30 10:54:48 -CLASS_METHOD : com.cflworks.common.controller.FileController.upload
 2018-10-30 10:54:48 -参数 : [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@13db595d, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@58287f9b]
 2018-10-30 10:54:48 -==>  Preparing: insert into sys_file ( `type`, `url`, `create_date` ) values ( ?, ?, ? ) 
 2018-10-30 10:54:48 -==> Parameters: 0(Integer), /files/20d09244-6f34-4780-b50d-d973a325e952.jpg(String), 2018-10-30 10:54:48.642(Timestamp)
@@ -1044,7 +1044,7 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:54:48 -返回值 : {msg=操作成功, fileName=/files/20d09244-6f34-4780-b50d-d973a325e952.jpg, code=0}
 2018-10-30 10:54:48 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:54:48 -HTTP METHOD : GET
-2018-10-30 10:54:48 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:54:48 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:54:48 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:54:48 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:54:48 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -1053,10 +1053,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:54:48 -==> Parameters: 0(String)
 2018-10-30 10:54:48 -<==      Total: 1
 2018-10-30 10:54:48 -耗时 : 3
-2018-10-30 10:54:48 -返回值 : com.bootdo.common.utils.PageUtils@4072d89f
+2018-10-30 10:54:48 -返回值 : com.cflworks.common.utils.PageUtils@4072d89f
 2018-10-30 10:54:54 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:54:54 -HTTP METHOD : GET
-2018-10-30 10:54:54 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:54:54 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:54:54 -参数 : [{limit=12, offset=0, type=1}]
 2018-10-30 10:54:54 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:54:54 -==> Parameters: 1(String), 0(Integer), 12(Integer)
@@ -1065,10 +1065,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:54:54 -==> Parameters: 1(String)
 2018-10-30 10:54:54 -<==      Total: 1
 2018-10-30 10:54:54 -耗时 : 3
-2018-10-30 10:54:54 -返回值 : com.bootdo.common.utils.PageUtils@751cc945
+2018-10-30 10:54:54 -返回值 : com.cflworks.common.utils.PageUtils@751cc945
 2018-10-30 10:54:56 -请求地址 : http://localhost:8088/common/sysFile/upload
 2018-10-30 10:54:56 -HTTP METHOD : POST
-2018-10-30 10:54:56 -CLASS_METHOD : com.bootdo.common.controller.FileController.upload
+2018-10-30 10:54:56 -CLASS_METHOD : com.cflworks.common.controller.FileController.upload
 2018-10-30 10:54:56 -参数 : [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2e2e400, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@7fec4366]
 2018-10-30 10:54:56 -==>  Preparing: insert into sys_file ( `type`, `url`, `create_date` ) values ( ?, ?, ? ) 
 2018-10-30 10:54:56 -==> Parameters: 0(Integer), /files/8222badf-bee1-4525-88d3-6de62b598860.jpg(String), 2018-10-30 10:54:56.971(Timestamp)
@@ -1077,7 +1077,7 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:54:57 -返回值 : {msg=操作成功, fileName=/files/8222badf-bee1-4525-88d3-6de62b598860.jpg, code=0}
 2018-10-30 10:54:57 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:54:57 -HTTP METHOD : GET
-2018-10-30 10:54:57 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:54:57 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:54:57 -参数 : [{limit=12, offset=0, type=1}]
 2018-10-30 10:54:57 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:54:57 -==> Parameters: 1(String), 0(Integer), 12(Integer)
@@ -1086,10 +1086,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:54:57 -==> Parameters: 1(String)
 2018-10-30 10:54:57 -<==      Total: 1
 2018-10-30 10:54:57 -耗时 : 3
-2018-10-30 10:54:57 -返回值 : com.bootdo.common.utils.PageUtils@46af369e
+2018-10-30 10:54:57 -返回值 : com.cflworks.common.utils.PageUtils@46af369e
 2018-10-30 10:55:00 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:55:00 -HTTP METHOD : GET
-2018-10-30 10:55:00 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:55:00 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:55:00 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:55:00 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:55:00 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -1098,13 +1098,13 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:55:00 -==> Parameters: 0(String)
 2018-10-30 10:55:00 -<==      Total: 1
 2018-10-30 10:55:00 -耗时 : 4
-2018-10-30 10:55:00 -返回值 : com.bootdo.common.utils.PageUtils@2536e8aa
+2018-10-30 10:55:00 -返回值 : com.cflworks.common.utils.PageUtils@2536e8aa
 2018-10-30 10:56:52 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
 2018-10-30 10:56:52 -==> Parameters: 1(Long)
 2018-10-30 10:56:52 -<==      Total: 52
 2018-10-30 10:56:52 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:56:52 -HTTP METHOD : GET
-2018-10-30 10:56:52 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:56:52 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:56:52 -参数 : [{limit=12, offset=0, type=2}]
 2018-10-30 10:56:52 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:56:52 -==> Parameters: 2(String), 0(Integer), 12(Integer)
@@ -1113,10 +1113,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:56:52 -==> Parameters: 2(String)
 2018-10-30 10:56:52 -<==      Total: 1
 2018-10-30 10:56:52 -耗时 : 3
-2018-10-30 10:56:52 -返回值 : com.bootdo.common.utils.PageUtils@4f03d4bb
+2018-10-30 10:56:52 -返回值 : com.cflworks.common.utils.PageUtils@4f03d4bb
 2018-10-30 10:56:53 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:56:53 -HTTP METHOD : GET
-2018-10-30 10:56:53 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:56:53 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:56:53 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:56:53 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:56:53 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -1125,10 +1125,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:56:53 -==> Parameters: 0(String)
 2018-10-30 10:56:53 -<==      Total: 1
 2018-10-30 10:56:53 -耗时 : 3
-2018-10-30 10:56:53 -返回值 : com.bootdo.common.utils.PageUtils@7884b7f9
+2018-10-30 10:56:53 -返回值 : com.cflworks.common.utils.PageUtils@7884b7f9
 2018-10-30 10:56:54 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:56:54 -HTTP METHOD : GET
-2018-10-30 10:56:54 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:56:54 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:56:54 -参数 : [{limit=12, offset=0, type=1}]
 2018-10-30 10:56:54 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:56:54 -==> Parameters: 1(String), 0(Integer), 12(Integer)
@@ -1137,10 +1137,10 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:56:54 -==> Parameters: 1(String)
 2018-10-30 10:56:54 -<==      Total: 1
 2018-10-30 10:56:54 -耗时 : 3
-2018-10-30 10:56:54 -返回值 : com.bootdo.common.utils.PageUtils@393eb5fc
+2018-10-30 10:56:54 -返回值 : com.cflworks.common.utils.PageUtils@393eb5fc
 2018-10-30 10:56:55 -请求地址 : http://localhost:8088/common/sysFile/list
 2018-10-30 10:56:55 -HTTP METHOD : GET
-2018-10-30 10:56:55 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-10-30 10:56:55 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-10-30 10:56:55 -参数 : [{limit=12, offset=0, type=0}]
 2018-10-30 10:56:55 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-10-30 10:56:55 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -1149,7 +1149,7 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 10:56:55 -==> Parameters: 0(String)
 2018-10-30 10:56:55 -<==      Total: 1
 2018-10-30 10:56:55 -耗时 : 3
-2018-10-30 10:56:55 -返回值 : com.bootdo.common.utils.PageUtils@7b32c8b
+2018-10-30 10:56:55 -返回值 : com.cflworks.common.utils.PageUtils@7b32c8b
 2018-10-30 11:00:00 -jetcache stat from 2018-10-30 10:45:00,009 to 2018-10-30 11:00:00,002
 cache|       qps|   rate|           get|           hit|          fail|        expire|avgLoadTime|maxLoadTime
 -----+----------+-------+--------------+--------------+--------------+--------------+-----------+-----------
@@ -1176,25 +1176,25 @@ cache|       qps|   rate|           get|           hit|          fail|        ex
 2018-10-30 11:45:54 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 876]
 2018-10-30 11:53:27 -请求地址 : http://localhost:8088/login;JSESSIONID=ff4f5829-be75-4b03-aff7-fd378a27385a
 2018-10-30 11:53:27 -HTTP METHOD : GET
-2018-10-30 11:53:27 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 11:53:27 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 11:53:27 -参数 : []
 2018-10-30 11:53:27 -耗时 : 1
 2018-10-30 11:53:27 -返回值 : login
 2018-10-30 11:53:28 -请求地址 : http://localhost:8088/login
 2018-10-30 11:53:28 -HTTP METHOD : GET
-2018-10-30 11:53:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 11:53:28 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 11:53:28 -参数 : []
 2018-10-30 11:53:28 -耗时 : 0
 2018-10-30 11:53:28 -返回值 : login
 2018-10-30 11:53:31 -请求地址 : http://localhost:8088/login
 2018-10-30 11:53:31 -HTTP METHOD : GET
-2018-10-30 11:53:31 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 11:53:31 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 11:53:31 -参数 : []
 2018-10-30 11:53:31 -耗时 : 0
 2018-10-30 11:53:31 -返回值 : login
 2018-10-30 11:53:35 -请求地址 : http://localhost:8088/login
 2018-10-30 11:53:35 -HTTP METHOD : GET
-2018-10-30 11:53:35 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-10-30 11:53:35 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-10-30 11:53:35 -参数 : []
 2018-10-30 11:53:35 -耗时 : 0
 2018-10-30 11:53:35 -返回值 : login

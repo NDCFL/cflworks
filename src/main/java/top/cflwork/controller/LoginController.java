@@ -1,6 +1,8 @@
 package top.cflwork.controller;
 
+import org.springframework.web.servlet.ModelAndView;
 import top.cflwork.common.annotation.Log;
+import top.cflwork.config.Constant;
 import top.cflwork.util.MD5Utils;
 import top.cflwork.util.R;
 import top.cflwork.util.ShiroUtils;
@@ -40,22 +42,18 @@ public class LoginController extends BaseController {
 
 	@Log("请求访问主页")
 	@GetMapping({ "/index" })
-	String index(Model model) {
+	ModelAndView index(Model model) {
+		ModelAndView modelAndView = new ModelAndView();
 		List<Tree<MenuDO>> menus = menuService.listMenuTree(getUserId());
-		model.addAttribute("menus", menus);
-		model.addAttribute("name", getUser().getName());
-		FileDO fileDO = fileService.get(getUser().getPicId());
-		if(fileDO!=null&&fileDO.getUrl()!=null){
-			if(fileService.isExist(fileDO.getUrl())){
-				model.addAttribute("picUrl",fileDO.getUrl());
-			}else {
-				model.addAttribute("picUrl","/img/photo_s.jpg");
-			}
+		modelAndView.addObject("menus", menus);
+		modelAndView.addObject("name", getUser().getName());
+		if(getUser().getHeadIcon()!=null){
+			model.addAttribute("headIcon", Constant.PATH+getUser().getHeadIcon());
 		}else {
-			model.addAttribute("picUrl","/img/photo_s.jpg");
+			model.addAttribute("headIcon","/img/photo_s.jpg");
 		}
-		model.addAttribute("username", getUser().getUsername());
-		return "index_v1";
+		modelAndView.setViewName("index_v1");
+		return modelAndView;
 	}
 
 	@GetMapping("/login")

@@ -7,8 +7,8 @@ import java.util.Date;
 /**
  * 文章内容
  * 
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-09-22 13:16:10
  */
 public class ContentDO implements Serializable {

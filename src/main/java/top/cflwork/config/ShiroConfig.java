@@ -27,7 +27,7 @@ import java.util.LinkedHashMap;
 //import org.apache.shiro.cache.CacheManager;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @author cflworks 275300091@qq.com
  */
 @Configuration
 public class ShiroConfig {

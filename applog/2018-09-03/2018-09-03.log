@@ -1,16 +1,16 @@
-2018-09-03 08:55:30 -Starting BootdoApplication on DESKTOP-9BL6UMN with PID 760 (F:\idea\bootdo\target\classes started by DELL in F:\idea\bootdo)
+2018-09-03 08:55:30 -Starting CflworksApplication on DESKTOP-9BL6UMN with PID 760 (F:\idea\cflworks\target\classes started by DELL in F:\idea\cflworks)
 2018-09-03 08:55:30 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 2018-09-03 08:55:30 -The following profiles are active: dev
 2018-09-03 08:55:30 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32502377: startup date [Mon Sep 03 08:55:30 CST 2018]; root of context hierarchy
 2018-09-03 08:55:31 -Multiple Spring Data modules found, entering strict repository configuration mode!
 2018-09-03 08:55:31 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94049d8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-03 08:55:31 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$865dcc31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-03 08:55:32 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 08:55:31 -Bean 'shiroConfig' of type [com.cflworks.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$865dcc31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 08:55:32 -Bean 'userRealm' of type [com.cflworks.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-09-03 08:55:32 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DELL/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
 2018-09-03 08:55:32 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-09-03 08:55:32 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-03 08:55:32 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
-2018-09-03 08:55:32 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2018-09-03 08:55:32 -Cache with name 'com.cflworks.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-09-03 08:55:32 -Added EhCache named [com.cflworks.system.shiro.UserRealm.authorizationCache]
 2018-09-03 08:55:32 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-09-03 08:55:32 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2018-09-03 08:55:32 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -48,164 +48,164 @@
 
 2018-09-03 08:55:34 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
 2018-09-03 08:55:34 -Quartz scheduler version: 2.2.1
-2018-09-03 08:55:34 -JobFactory set to: com.bootdo.common.quartz.factory.JobFactory@78318ac2
+2018-09-03 08:55:34 -JobFactory set to: com.cflworks.common.quartz.factory.JobFactory@78318ac2
 2018-09-03 08:55:35 -Initializing ExecutorService  'clientInboundChannelExecutor'
 2018-09-03 08:55:35 -Initializing ExecutorService  'clientOutboundChannelExecutor'
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.remove(java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ModelController.list(int,int)
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.batchRemove(java.lang.String[])
-2018-09-03 08:55:35 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ModelController.model()
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/add]}" onto public void com.bootdo.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.bootdo.activiti.controller.ModelController.getEditorJson(java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
-2018-09-03 08:55:35 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.bootdo.activiti.controller.ModelController.getStencilset()
-2018-09-03 08:55:35 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.bootdo.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.add()
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.remove(java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ProcessController.list(int,int)
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.batchRemove(java.lang.String[])
-2018-09-03 08:55:35 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.process()
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.bootdo.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-09-03 08:55:35 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
-2018-09-03 08:55:35 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.add()
-2018-09-03 08:55:35 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String[])
-2018-09-03 08:55:35 -Mapped "{[/act/salary/update]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.update(com.bootdo.activiti.domain.SalaryDO)
-2018-09-03 08:55:35 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.Salary()
-2018-09-03 08:55:35 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.saveOrUpdate(com.bootdo.activiti.domain.SalaryDO)
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.TaskController.list(int,int)
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.bootdo.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.todo()
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.gotoTask()
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2018-09-03 08:55:35 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.bootdo.activiti.vo.TaskVO> com.bootdo.activiti.controller.TaskController.todoList()
-2018-09-03 08:55:35 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.blog()
-2018-09-03 08:55:35 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.add()
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/update]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.update(com.bootdo.blog.domain.ContentDO)
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.save(com.bootdo.blog.domain.ContentDO)
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.bContent()
-2018-09-03 08:55:35 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.add()
-2018-09-03 08:55:35 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/common/dict/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.update(com.bootdo.common.domain.DictDO)
-2018-09-03 08:55:35 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.save(com.bootdo.common.domain.DictDO)
-2018-09-03 08:55:35 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listType()
-2018-09-03 08:55:35 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.dict()
-2018-09-03 08:55:35 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listByType(java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.add()
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.update(com.bootdo.common.domain.FileDO)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.save(com.bootdo.common.domain.FileDO)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.info(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.sysFile(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
-2018-09-03 08:55:35 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.common.controller.GeneratorController.list()
-2018-09-03 08:55:35 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.GeneratorController.generator()
-2018-09-03 08:55:35 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.bootdo.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
-2018-09-03 08:55:35 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.bootdo.common.controller.GeneratorController.edit(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/common/generator/batchCode]}" onto public void com.bootdo.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
-2018-09-03 08:55:35 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.add()
-2018-09-03 08:55:35 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.update(com.bootdo.common.domain.TaskDO)
-2018-09-03 08:55:35 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.save(com.bootdo.common.domain.TaskDO)
-2018-09-03 08:55:35 -Mapped "{[/common/job/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.info(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.taskScheduleJob()
-2018-09-03 08:55:35 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.LogController.log()
-2018-09-03 08:55:35 -Mapped "{[/common/log/list],methods=[GET]}" onto com.bootdo.common.domain.PageDO<com.bootdo.common.domain.LogDO> com.bootdo.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.batchRemove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/error]}" onto public com.bootdo.common.utils.R com.bootdo.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-03 08:55:35 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.add()
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/update]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.update(com.bootdo.oa.domain.NotifyDO)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.save(com.bootdo.oa.domain.NotifyDO)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.message()
-2018-09-03 08:55:35 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.oaNotify()
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.selefNotify()
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/update]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.update(com.bootdo.system.domain.DeptDO)
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.list()
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/save]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.save(com.bootdo.system.domain.DeptDO)
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.tree()
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.dept()
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.treeView()
-2018-09-03 08:55:35 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
-2018-09-03 08:55:35 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/login],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
-2018-09-03 08:55:35 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.logout()
-2018-09-03 08:55:35 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.login()
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.update(com.bootdo.system.domain.MenuDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.save(com.bootdo.system.domain.MenuDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree()
-2018-09-03 08:55:35 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.menu(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.add()
-2018-09-03 08:55:35 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.update(com.bootdo.system.domain.RoleDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.bootdo.system.domain.RoleDO> com.bootdo.system.controller.RoleController.list()
-2018-09-03 08:55:35 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(com.bootdo.system.domain.RoleDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.batchRemove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.role()
-2018-09-03 08:55:35 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.bootdo.system.domain.UserOnline> com.bootdo.system.controller.SessionController.list()
-2018-09-03 08:55:35 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.bootdo.system.controller.SessionController.sessionList()
-2018-09-03 08:55:35 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
-2018-09-03 08:55:35 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.bootdo.system.controller.SessionController.online()
-2018-09-03 08:55:35 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.bootdo.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.add(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.remove(java.lang.Long)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.update(com.bootdo.system.domain.UserDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.save(com.bootdo.system.domain.UserDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.batchRemove(java.lang.Long[])
-2018-09-03 08:55:35 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.UserController.tree()
-2018-09-03 08:55:35 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.user(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.personal(org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.adminResetPwd(com.bootdo.system.vo.UserVO)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.treeView()
-2018-09-03 08:55:35 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.updatePeronal(com.bootdo.system.domain.UserDO)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.resetPwd(com.bootdo.system.vo.UserVO)
-2018-09-03 08:55:35 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ModelController.remove(java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.ModelController.list(int,int)
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2018-09-03 08:55:35 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.ModelController.model()
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/add]}" onto public void com.cflworks.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.cflworks.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.cflworks.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.cflworks.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-09-03 08:55:35 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.cflworks.activiti.controller.ModelController.getStencilset()
+2018-09-03 08:55:35 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.cflworks.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.ProcessController.add()
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.remove(java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.ProcessController.list(int,int)
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2018-09-03 08:55:35 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.ProcessController.process()
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.cflworks.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-09-03 08:55:35 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-09-03 08:55:35 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.cflworks.activiti.controller.SalaryController.add()
+2018-09-03 08:55:35 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.remove(java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.remove(java.lang.String[])
+2018-09-03 08:55:35 -Mapped "{[/act/salary/update]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.update(com.cflworks.activiti.domain.SalaryDO)
+2018-09-03 08:55:35 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.cflworks.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.cflworks.activiti.controller.SalaryController.Salary()
+2018-09-03 08:55:35 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.activiti.controller.SalaryController.saveOrUpdate(com.cflworks.activiti.domain.SalaryDO)
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.cflworks.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.activiti.controller.TaskController.list(int,int)
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.cflworks.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.TaskController.todo()
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.cflworks.activiti.controller.TaskController.gotoTask()
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.cflworks.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-09-03 08:55:35 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.cflworks.activiti.vo.TaskVO> com.cflworks.activiti.controller.TaskController.todoList()
+2018-09-03 08:55:35 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.BlogController.blog()
+2018-09-03 08:55:35 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.ContentController.add()
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.remove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/update]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.update(com.cflworks.blog.domain.ContentDO)
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.blog.controller.ContentController.save(com.cflworks.blog.domain.ContentDO)
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.cflworks.blog.controller.ContentController.bContent()
+2018-09-03 08:55:35 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.add()
+2018-09-03 08:55:35 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.remove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/common/dict/update]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.update(com.cflworks.common.domain.DictDO)
+2018-09-03 08:55:35 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.DictController.save(com.cflworks.common.domain.DictDO)
+2018-09-03 08:55:35 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.cflworks.common.domain.DictDO> com.cflworks.common.controller.DictController.listType()
+2018-09-03 08:55:35 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.dict()
+2018-09-03 08:55:35 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.cflworks.common.domain.DictDO> com.cflworks.common.controller.DictController.listByType(java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.FileController.add()
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.remove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/update]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.update(com.cflworks.common.domain.FileDO)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.save(com.cflworks.common.domain.FileDO)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.FileController.info(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-09-03 08:55:35 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.cflworks.common.controller.GeneratorController.list()
+2018-09-03 08:55:35 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.GeneratorController.generator()
+2018-09-03 08:55:35 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.cflworks.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-09-03 08:55:35 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.cflworks.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/common/generator/batchCode]}" onto public void com.cflworks.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-09-03 08:55:35 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.JobController.add()
+2018-09-03 08:55:35 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.remove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.update(com.cflworks.common.domain.TaskDO)
+2018-09-03 08:55:35 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.save(com.cflworks.common.domain.TaskDO)
+2018-09-03 08:55:35 -Mapped "{[/common/job/info/{id}]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.info(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.JobController.taskScheduleJob()
+2018-09-03 08:55:35 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.LogController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.cflworks.common.controller.LogController.log()
+2018-09-03 08:55:35 -Mapped "{[/common/log/list],methods=[GET]}" onto com.cflworks.common.domain.PageDO<com.cflworks.common.domain.LogDO> com.cflworks.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/error]}" onto public com.cflworks.common.utils.R com.cflworks.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 08:55:35 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.cflworks.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.add()
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/update]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.update(com.cflworks.oa.domain.NotifyDO)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.cflworks.common.utils.PageUtils com.cflworks.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.oa.controller.NotifyController.save(com.cflworks.oa.domain.NotifyDO)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.oa.controller.NotifyController.message()
+2018-09-03 08:55:35 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.oaNotify()
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.selefNotify()
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.remove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/update]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.update(com.cflworks.system.domain.DeptDO)
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.cflworks.system.domain.DeptDO> com.cflworks.system.controller.DeptController.list()
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/save]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.DeptController.save(com.cflworks.system.domain.DeptDO)
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.cflworks.common.domain.Tree<com.cflworks.system.domain.DeptDO> com.cflworks.system.controller.DeptController.tree()
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.dept()
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.treeView()
+2018-09-03 08:55:35 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.main()
+2018-09-03 08:55:35 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/login],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-09-03 08:55:35 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.logout()
+2018-09-03 08:55:35 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.LoginController.login()
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.MenuController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.MenuController.update(com.cflworks.system.domain.MenuDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.cflworks.system.domain.MenuDO> com.cflworks.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.MenuController.save(com.cflworks.system.domain.MenuDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.cflworks.common.domain.Tree<com.cflworks.system.domain.MenuDO> com.cflworks.system.controller.MenuController.tree(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.cflworks.common.domain.Tree<com.cflworks.system.domain.MenuDO> com.cflworks.system.controller.MenuController.tree()
+2018-09-03 08:55:35 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.RoleController.add()
+2018-09-03 08:55:35 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.update(com.cflworks.system.domain.RoleDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.cflworks.system.domain.RoleDO> com.cflworks.system.controller.RoleController.list()
+2018-09-03 08:55:35 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.save(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.save(com.cflworks.system.domain.RoleDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.RoleController.role()
+2018-09-03 08:55:35 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.cflworks.system.domain.UserOnline> com.cflworks.system.controller.SessionController.list()
+2018-09-03 08:55:35 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.cflworks.system.controller.SessionController.sessionList()
+2018-09-03 08:55:35 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.cflworks.common.utils.R com.cflworks.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-09-03 08:55:35 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.cflworks.system.controller.SessionController.online()
+2018-09-03 08:55:35 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.cflworks.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.add(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.remove(java.lang.Long)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.update(com.cflworks.system.domain.UserDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.cflworks.common.utils.PageUtils com.cflworks.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.save(com.cflworks.system.domain.UserDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-09-03 08:55:35 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.cflworks.common.domain.Tree<com.cflworks.system.domain.DeptDO> com.cflworks.system.controller.UserController.tree()
+2018-09-03 08:55:35 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.user(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.personal(org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.adminResetPwd(com.cflworks.system.vo.UserVO)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.treeView()
+2018-09-03 08:55:35 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.updatePeronal(com.cflworks.system.domain.UserDO)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.cflworks.common.utils.R com.cflworks.system.controller.UserController.resetPwd(com.cflworks.system.vo.UserVO)
+2018-09-03 08:55:35 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.cflworks.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
 2018-09-03 08:55:35 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
 2018-09-03 08:55:35 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 2018-09-03 08:55:35 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
@@ -367,7 +367,7 @@
 2018-09-03 08:55:38 -Starting ProtocolHandler ["http-nio-8080"]
 2018-09-03 08:55:38 -Using a shared selector for servlet write/read
 2018-09-03 08:55:38 -Tomcat started on port(s): 8080 (http) with context path ''
-2018-09-03 08:55:38 -Started BootdoApplication in 8.116 seconds (JVM running for 9.084)
+2018-09-03 08:55:38 -Started CflworksApplication in 8.116 seconds (JVM running for 9.084)
 2018-09-03 08:55:38 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
 2018-09-03 08:55:38 -==> Parameters: 
 2018-09-03 08:55:38 -<==      Total: 1
@@ -379,25 +379,25 @@
 2018-09-03 08:57:00 -Enabling session validation scheduler...
 2018-09-03 08:57:00 -请求地址 : http://localhost:8080/
 2018-09-03 08:57:00 -HTTP METHOD : GET
-2018-09-03 08:57:00 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-09-03 08:57:00 -CLASS_METHOD : com.cflworks.system.controller.LoginController.welcome
 2018-09-03 08:57:00 -参数 : [{}]
 2018-09-03 08:57:00 -耗时 : 1
 2018-09-03 08:57:00 -返回值 : redirect:/blog
 2018-09-03 08:57:00 -请求地址 : http://localhost:8080/blog
 2018-09-03 08:57:00 -HTTP METHOD : GET
-2018-09-03 08:57:00 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2018-09-03 08:57:00 -CLASS_METHOD : com.cflworks.blog.controller.BlogController.blog
 2018-09-03 08:57:00 -参数 : []
 2018-09-03 08:57:00 -耗时 : 0
 2018-09-03 08:57:00 -返回值 : blog/index/main
 2018-09-03 08:57:00 -请求地址 : http://localhost:8080/blog/open/list
 2018-09-03 08:57:00 -HTTP METHOD : GET
-2018-09-03 08:57:00 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2018-09-03 08:57:00 -CLASS_METHOD : com.cflworks.blog.controller.BlogController.opentList
 2018-09-03 08:57:00 -参数 : [{type=article, limit=10, offset=0}]
 2018-09-03 08:57:00 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
 2018-09-03 08:57:00 -==> Parameters: article(String)
 2018-09-03 08:57:00 -请求地址 : http://localhost:8080/login;JSESSIONID=d8d6b26e-1c3d-46a4-93bc-c834f9c90116
 2018-09-03 08:57:00 -HTTP METHOD : GET
-2018-09-03 08:57:00 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-09-03 08:57:00 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-09-03 08:57:00 -参数 : []
 2018-09-03 08:57:00 -耗时 : 1
 2018-09-03 08:57:00 -返回值 : login
@@ -406,22 +406,22 @@
 2018-09-03 08:57:00 -==> Parameters: article(String)
 2018-09-03 08:57:00 -<==      Total: 1
 2018-09-03 08:57:00 -耗时 : 109
-2018-09-03 08:57:00 -返回值 : com.bootdo.common.utils.PageUtils@2db6bfa
+2018-09-03 08:57:00 -返回值 : com.cflworks.common.utils.PageUtils@2db6bfa
 2018-09-03 08:57:08 -请求地址 : http://localhost:8080/login
 2018-09-03 08:57:08 -HTTP METHOD : GET
-2018-09-03 08:57:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-09-03 08:57:08 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-09-03 08:57:08 -参数 : []
 2018-09-03 08:57:08 -耗时 : 0
 2018-09-03 08:57:08 -返回值 : login
 2018-09-03 08:57:08 -请求地址 : http://localhost:8080/login
 2018-09-03 08:57:08 -HTTP METHOD : GET
-2018-09-03 08:57:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-09-03 08:57:08 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-09-03 08:57:08 -参数 : []
 2018-09-03 08:57:08 -耗时 : 0
 2018-09-03 08:57:08 -返回值 : login
 2018-09-03 08:57:11 -请求地址 : http://localhost:8080/login
 2018-09-03 08:57:11 -HTTP METHOD : POST
-2018-09-03 08:57:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-09-03 08:57:11 -CLASS_METHOD : com.cflworks.system.controller.LoginController.ajaxLogin
 2018-09-03 08:57:11 -参数 : [admin, 111111]
 2018-09-03 08:57:11 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
 2018-09-03 08:57:11 -==> Parameters: admin(String)
@@ -430,10 +430,10 @@
 2018-09-03 08:57:11 -返回值 : {msg=操作成功, code=0}
 2018-09-03 08:57:11 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
 2018-09-03 08:57:11 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2018-09-03 08:57:11 -==> Parameters: 1(Long), admin(String), 登录(String), 57(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-09-03 08:57:11.411(Timestamp)
+2018-09-03 08:57:11 -==> Parameters: 1(Long), admin(String), 登录(String), 57(Integer), com.cflworks.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-09-03 08:57:11.411(Timestamp)
 2018-09-03 08:57:11 -请求地址 : http://localhost:8080/index
 2018-09-03 08:57:11 -HTTP METHOD : GET
-2018-09-03 08:57:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-09-03 08:57:11 -CLASS_METHOD : com.cflworks.system.controller.LoginController.index
 2018-09-03 08:57:11 -参数 : [{}]
 2018-09-03 08:57:11 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
 2018-09-03 08:57:11 -==> Parameters: 1(Long)
@@ -445,23 +445,23 @@
 2018-09-03 08:57:11 -耗时 : 126
 2018-09-03 08:57:11 -返回值 : index_v1
 2018-09-03 08:57:11 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2018-09-03 08:57:11 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 126(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-09-03 08:57:11.58(Timestamp)
+2018-09-03 08:57:11 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 126(Integer), com.cflworks.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-09-03 08:57:11.58(Timestamp)
 2018-09-03 08:57:11 -<==    Updates: 1
 2018-09-03 08:57:11 -请求地址 : http://localhost:8080/main
 2018-09-03 08:57:11 -HTTP METHOD : GET
-2018-09-03 08:57:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-09-03 08:57:11 -CLASS_METHOD : com.cflworks.system.controller.LoginController.main
 2018-09-03 08:57:11 -参数 : []
 2018-09-03 08:57:11 -耗时 : 0
 2018-09-03 08:57:11 -返回值 : main
 2018-09-03 08:57:11 -请求地址 : http://localhost:8080/oa/notify/message
 2018-09-03 08:57:11 -HTTP METHOD : GET
-2018-09-03 08:57:11 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-09-03 08:57:11 -CLASS_METHOD : com.cflworks.oa.controller.NotifyController.message
 2018-09-03 08:57:11 -参数 : []
 2018-09-03 08:57:11 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
 2018-09-03 08:57:11 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
 2018-09-03 08:57:11 -请求地址 : http://localhost:8080/main
 2018-09-03 08:57:11 -HTTP METHOD : GET
-2018-09-03 08:57:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-09-03 08:57:11 -CLASS_METHOD : com.cflworks.system.controller.LoginController.main
 2018-09-03 08:57:11 -参数 : []
 2018-09-03 08:57:11 -耗时 : 0
 2018-09-03 08:57:11 -返回值 : main
@@ -470,10 +470,10 @@
 2018-09-03 08:57:11 -==> Parameters: 1(Long), 0(String)
 2018-09-03 08:57:11 -<==      Total: 1
 2018-09-03 08:57:11 -耗时 : 40
-2018-09-03 08:57:11 -返回值 : com.bootdo.common.utils.PageUtils@bf8bb35
+2018-09-03 08:57:11 -返回值 : com.cflworks.common.utils.PageUtils@bf8bb35
 2018-09-03 09:00:00 -请求地址 : http://localhost:8080/activiti/task/todo
 2018-09-03 09:00:00 -HTTP METHOD : GET
-2018-09-03 09:00:00 -CLASS_METHOD : com.bootdo.activiti.controller.TaskController.todo
+2018-09-03 09:00:00 -CLASS_METHOD : com.cflworks.activiti.controller.TaskController.todo
 2018-09-03 09:00:00 -参数 : []
 2018-09-03 09:00:00 -耗时 : 0
 2018-09-03 09:00:00 -返回值 : ModelAndView: reference to view with name 'act/task/todoTask'; model is null
@@ -482,25 +482,25 @@
 2018-09-03 09:00:00 -<==      Total: 47
 2018-09-03 09:00:01 -请求地址 : http://localhost:8080/activiti/task/todoList
 2018-09-03 09:00:01 -HTTP METHOD : GET
-2018-09-03 09:00:01 -CLASS_METHOD : com.bootdo.activiti.controller.TaskController.todoList
+2018-09-03 09:00:01 -CLASS_METHOD : com.cflworks.activiti.controller.TaskController.todoList
 2018-09-03 09:00:01 -参数 : []
 2018-09-03 09:00:01 -请求地址 : http://localhost:8080/activiti/task/gotoList
 2018-09-03 09:00:01 -HTTP METHOD : GET
-2018-09-03 09:00:01 -CLASS_METHOD : com.bootdo.activiti.controller.TaskController.list
+2018-09-03 09:00:01 -CLASS_METHOD : com.cflworks.activiti.controller.TaskController.list
 2018-09-03 09:00:01 -参数 : [0, 10]
 2018-09-03 09:00:01 -耗时 : 90
-2018-09-03 09:00:01 -返回值 : com.bootdo.common.utils.PageUtils@516b9d56
+2018-09-03 09:00:01 -返回值 : com.cflworks.common.utils.PageUtils@516b9d56
 2018-09-03 09:00:01 -耗时 : 100
 2018-09-03 09:00:01 -返回值 : []
 2018-09-03 09:01:00 -请求地址 : http://localhost:8080/sys/role
 2018-09-03 09:01:00 -HTTP METHOD : GET
-2018-09-03 09:01:00 -CLASS_METHOD : com.bootdo.system.controller.RoleController.role
+2018-09-03 09:01:00 -CLASS_METHOD : com.cflworks.system.controller.RoleController.role
 2018-09-03 09:01:00 -参数 : []
 2018-09-03 09:01:00 -耗时 : 0
 2018-09-03 09:01:00 -返回值 : system/role/role
 2018-09-03 09:01:00 -请求地址 : http://localhost:8080/sys/role/list
 2018-09-03 09:01:00 -HTTP METHOD : GET
-2018-09-03 09:01:00 -CLASS_METHOD : com.bootdo.system.controller.RoleController.list
+2018-09-03 09:01:00 -CLASS_METHOD : com.cflworks.system.controller.RoleController.list
 2018-09-03 09:01:00 -参数 : []
 2018-09-03 09:01:00 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
 2018-09-03 09:01:00 -==> Parameters: 
@@ -509,7 +509,7 @@
 2018-09-03 09:01:00 -返回值 : [RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
 2018-09-03 09:01:02 -请求地址 : http://localhost:8080/sys/role/edit/1
 2018-09-03 09:01:02 -HTTP METHOD : GET
-2018-09-03 09:01:02 -CLASS_METHOD : com.bootdo.system.controller.RoleController.edit
+2018-09-03 09:01:02 -CLASS_METHOD : com.cflworks.system.controller.RoleController.edit
 2018-09-03 09:01:02 -参数 : [1, {}]
 2018-09-03 09:01:02 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role where role_id = ? 
 2018-09-03 09:01:02 -==> Parameters: 1(Long)
@@ -517,11 +517,11 @@
 2018-09-03 09:01:02 -耗时 : 3
 2018-09-03 09:01:02 -返回值 : system/role/edit
 2018-09-03 09:01:02 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2018-09-03 09:01:02 -==> Parameters: 1(Long), admin(String), 编辑角色(String), 3(Integer), com.bootdo.system.controller.RoleController.edit()(String), null, 127.0.0.1(String), 2018-09-03 09:01:02.735(Timestamp)
+2018-09-03 09:01:02 -==> Parameters: 1(Long), admin(String), 编辑角色(String), 3(Integer), com.cflworks.system.controller.RoleController.edit()(String), null, 127.0.0.1(String), 2018-09-03 09:01:02.735(Timestamp)
 2018-09-03 09:01:02 -<==    Updates: 1
 2018-09-03 09:01:02 -请求地址 : http://localhost:8080/sys/menu/tree/1
 2018-09-03 09:01:02 -HTTP METHOD : GET
-2018-09-03 09:01:02 -CLASS_METHOD : com.bootdo.system.controller.MenuController.tree
+2018-09-03 09:01:02 -CLASS_METHOD : com.cflworks.system.controller.MenuController.tree
 2018-09-03 09:01:02 -参数 : [1]
 2018-09-03 09:01:02 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by menu_id desc 
 2018-09-03 09:01:02 -==> Parameters: 
@@ -533,7 +533,7 @@
 2018-09-03 09:01:02 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","state":{"selected":true},"text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","state":{"selected":false},"text":"图表管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","state":{"selected":true},"text":"待办任务"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"99","parentId":"96","state":{"selected":true},"text":"所有权限"}],"hasChildren":true,"hasParent":true,"id":"96","parentId":"93","state":{"selected":false},"text":"流程管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"95","parentId":"94","state":{"selected":true},"text":"全部权限"}],"hasChildren":true,"hasParent":true,"id":"94","parentId":"93","state":{"selected":false},"text":"模型管理"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","state":{"selected":false},"text":"工作流程"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","state":{"selected":true},"text":"在线用户"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","state":{"selected":true},"text":"运行监控"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"30","parentId":"27","state":{"selected":true},"text":"清空"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"29","parentId":"27","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"28","parentId":"27","state":{"selected":true},"text":"刷新"}],"hasChildren":true,"hasParent":true,"id":"27","parentId":"91","state":{"selected":false},"text":"系统日志"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","state":{"selected":false},"text":"系统监控"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","state":{"selected":true},"text":"我的通知"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"89","parentId":"85","state":{"selected":true},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"88","parentId":"85","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"87","parentId":"85","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"86","parentId":"85","state":{"selected":true},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"85","parentId":"84","state":{"selected":false},"text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","state":{"selected":false},"text":"办公管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","state":{"selected":true},"text":"计划任务"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","state":{"selected":true},"text":"代码生成"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","state":{"selected":false},"text":"系统工具"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","state":{"selected":true},"text":"发布文章"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"60","parentId":"50","state":{"selected":true},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"59","parentId":"50","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"58","parentId":"50","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"51","parentId":"50","state":{"selected":true},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"50","parentId":"49","state":{"selected":false},"text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","state":{"selected":false},"text":"博客管理"},{"checked":false,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"76","parentId":"73","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"75","parentId":"73","state":{"selected":true},"text":"刪除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"74","parentId":"73","state":{"selected":true},"text":"增加"}],"hasChildren":true,"hasParent":true,"id":"73","parentId":"3","state":{"selected":false},"text":"部门管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"62","parentId":"7","state":{"selected":true},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"56","parentId":"7","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"55","parentId":"7","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"7","state":{"selected":true},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"7","parentId":"3","state":{"selected":false},"text":"角色管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"26","parentId":"6","state":{"selected":true},"text":"重置密码"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"25","parentId":"6","state":{"selected":true},"text":"停用"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"24","parentId":"6","state":{"selected":true},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"6","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"13","parentId":"6","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"6","state":{"selected":true},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"6","parentId":"3","state":{"selected":false},"text":"用户管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"61","parentId":"2","state":{"selected":true},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"22","parentId":"2","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"21","parentId":"2","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"20","parentId":"2","state":{"selected":true},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"2","parentId":"3","state":{"selected":false},"text":"系统菜单"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","state":{"selected":false},"text":"系统管理"},{"checked":false,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"83","parentId":"78","state":{"selected":true},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"81","parentId":"78","state":{"selected":true},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"80","parentId":"78","state":{"selected":true},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"79","parentId":"78","state":{"selected":true},"text":"增加"}],"hasChildren":true,"hasParent":true,"id":"78","parentId":"1","state":{"selected":false},"text":"数据字典"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","state":{"selected":true},"text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","state":{"selected":false},"text":"基础管理"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
 2018-09-03 09:01:07 -请求地址 : http://localhost:8080/sys/role/update
 2018-09-03 09:01:07 -HTTP METHOD : POST
-2018-09-03 09:01:07 -CLASS_METHOD : com.bootdo.system.controller.RoleController.update
+2018-09-03 09:01:07 -CLASS_METHOD : com.cflworks.system.controller.RoleController.update
 2018-09-03 09:01:07 -参数 : [RoleDO{roleId=1, roleName='超级用户角色', roleSign='null', remark='拥有最高权限', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=[98, 101, 99, 95, 92, 57, 30, 29, 28, 90, 89, 88, 87, 86, 72, 48, 68, 60, 59, 58, 51, 83, 81, 80, 79, 71, 97, 96, 94, 93, 27, 91, 85, 84, 77, 50, 49, 78, 1, 3, 76, 75, 74, 62, 56, 55, 15, 26, 25, 24, 14, 13, 12, 61, 22, 21, 20, 73, 7, 6, 2, -1]}]
 2018-09-03 09:01:07 -==>  Preparing: update sys_role SET `role_name` = ?, `remark` = ? where role_id = ? 
 2018-09-03 09:01:07 -==> Parameters: 超级用户角色(String), 拥有最高权限(String), 1(Long)
@@ -547,10 +547,10 @@
 2018-09-03 09:01:07 -耗时 : 150
 2018-09-03 09:01:07 -返回值 : {msg=操作成功, code=0}
 2018-09-03 09:01:07 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2018-09-03 09:01:07 -==> Parameters: 1(Long), admin(String), 更新角色(String), 150(Integer), com.bootdo.system.controller.RoleController.update()(String), null, 127.0.0.1(String), 2018-09-03 09:01:07.54(Timestamp)
+2018-09-03 09:01:07 -==> Parameters: 1(Long), admin(String), 更新角色(String), 150(Integer), com.cflworks.system.controller.RoleController.update()(String), null, 127.0.0.1(String), 2018-09-03 09:01:07.54(Timestamp)
 2018-09-03 09:01:07 -请求地址 : http://localhost:8080/sys/role/list
 2018-09-03 09:01:07 -HTTP METHOD : GET
-2018-09-03 09:01:07 -CLASS_METHOD : com.bootdo.system.controller.RoleController.list
+2018-09-03 09:01:07 -CLASS_METHOD : com.cflworks.system.controller.RoleController.list
 2018-09-03 09:01:07 -参数 : []
 2018-09-03 09:01:07 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
 2018-09-03 09:01:07 -==> Parameters: 
@@ -560,13 +560,13 @@
 2018-09-03 09:01:07 -<==    Updates: 1
 2018-09-03 09:01:10 -请求地址 : http://localhost:8080/sys/menu/
 2018-09-03 09:01:10 -HTTP METHOD : GET
-2018-09-03 09:01:10 -CLASS_METHOD : com.bootdo.system.controller.MenuController.menu
+2018-09-03 09:01:10 -CLASS_METHOD : com.cflworks.system.controller.MenuController.menu
 2018-09-03 09:01:10 -参数 : [{}]
 2018-09-03 09:01:10 -耗时 : 0
 2018-09-03 09:01:10 -返回值 : system/menu/menu
 2018-09-03 09:01:10 -请求地址 : http://localhost:8080/sys/menu/list
 2018-09-03 09:01:10 -HTTP METHOD : GET
-2018-09-03 09:01:10 -CLASS_METHOD : com.bootdo.system.controller.MenuController.list
+2018-09-03 09:01:10 -CLASS_METHOD : com.cflworks.system.controller.MenuController.list
 2018-09-03 09:01:10 -参数 : [{sort=order_num}]
 2018-09-03 09:01:10 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by order_num 
 2018-09-03 09:01:10 -==> Parameters: 
@@ -575,19 +575,19 @@
 2018-09-03 09:01:10 -返回值 : [MenuDO{menuId=51, parentId=50, name='新增', url='', perms='blog:bContent:add', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=55, parentId=7, name='编辑', url='', perms='sys:role:edit', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=56, parentId=7, name='删除', url='', perms='sys:role:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=58, parentId=50, name='编辑', url='', perms='blog:bContent:edit', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=59, parentId=50, name='删除', url='', perms='blog:bContent:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=60, parentId=50, name='批量删除', url='', perms='blog:bContent:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=61, parentId=2, name='批量删除', url='', perms='sys:menu:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=62, parentId=7, name='批量删除', url='', perms='sys:role:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=85, parentId=84, name='通知公告', url='oa/notify', perms='oa:notify:notify', type=1, icon='fa fa-pencil-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=88, parentId=85, name='删除', url='oa/notify/remove', perms='oa:notify:remove', type=2, icon='fa fa-minus', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=89, parentId=85, name='批量删除', url='oa/notify/batchRemove', perms='oa:notify:batchRemove', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=90, parentId=84, name='我的通知', url='oa/notify/selfNotify', perms='', type=1, icon='fa fa-envelope-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=92, parentId=91, name='在线用户', url='sys/online', perms='', type=1, icon='fa fa-user', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=94, parentId=93, name='模型管理', url='activiti/model', perms='', type=1, icon='fa fa-sort-amount-asc', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=95, parentId=94, name='全部权限', url='', perms='activiti:model', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=96, parentId=93, name='流程管理', url='activiti/process', perms='', type=1, icon='fa fa-flag', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=98, parentId=97, name='百度chart', url='/chart/graph_echarts.html', perms='', type=1, icon='fa fa-area-chart', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=99, parentId=96, name='所有权限', url='', perms='act:process', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=101, parentId=93, name='待办任务', url='activiti/task/todo', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=1, parentId=0, name='基础管理', url='', perms='', type=0, icon='fa fa-bars', orderNum=0, gmtCreate=Wed Aug 09 22:49:47 CST 2017, gmtModified=null}, MenuDO{menuId=6, parentId=3, name='用户管理', url='sys/user/', perms='sys:user:user', type=1, icon='fa fa-user', orderNum=0, gmtCreate=Thu Aug 10 14:12:11 CST 2017, gmtModified=null}, MenuDO{menuId=12, parentId=6, name='新增', url='', perms='sys:user:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:51:35 CST 2017, gmtModified=null}, MenuDO{menuId=13, parentId=6, name='编辑', url='', perms='sys:user:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:52:06 CST 2017, gmtModified=null}, MenuDO{menuId=14, parentId=6, name='删除', url='null', perms='sys:user:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 10:52:24 CST 2017, gmtModified=null}, MenuDO{menuId=15, parentId=7, name='新增', url='', perms='sys:role:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:56:37 CST 2017, gmtModified=null}, MenuDO{menuId=20, parentId=2, name='新增', url='', perms='sys:menu:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:32 CST 2017, gmtModified=null}, MenuDO{menuId=21, parentId=2, name='编辑', url='', perms='sys:menu:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:56 CST 2017, gmtModified=null}, MenuDO{menuId=22, parentId=2, name='删除', url='', perms='sys:menu:remove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 11:00:26 CST 2017, gmtModified=null}, MenuDO{menuId=24, parentId=6, name='批量删除', url='', perms='sys:user:batchRemove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:27:18 CST 2017, gmtModified=null}, MenuDO{menuId=25, parentId=6, name='停用', url='null', perms='sys:user:disable', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 17:27:43 CST 2017, gmtModified=null}, MenuDO{menuId=26, parentId=6, name='重置密码', url='', perms='sys:user:resetPwd', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:28:34 CST 2017, gmtModified=null}, MenuDO{menuId=27, parentId=91, name='系统日志', url='common/log', perms='common:log', type=1, icon='fa fa-warning', orderNum=0, gmtCreate=Mon Aug 14 22:11:53 CST 2017, gmtModified=null}, MenuDO{menuId=28, parentId=27, name='刷新', url='null', perms='sys:log:list', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:22 CST 2017, gmtModified=null}, MenuDO{menuId=29, parentId=27, name='删除', url='null', perms='sys:log:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:43 CST 2017, gmtModified=null}, MenuDO{menuId=30, parentId=27, name='清空', url='null', perms='sys:log:clear', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:31:02 CST 2017, gmtModified=null}, MenuDO{menuId=68, parentId=49, name='发布文章', url='/blog/bContent/add', perms='blog:bContent:add', type=1, icon='fa fa-edit', orderNum=0, gmtCreate=null, gmtModified=null}, MenuDO{menuId=3, parentId=0, name='系统管理', url='null', perms='null', type=0, icon='fa fa-desktop', orderNum=1, gmtCreate=Wed Aug 09 23:06:55 CST 2017, gmtModified=Mon Aug 14 14:13:43 CST 2017}, MenuDO{menuId=7, parentId=3, name='角色管理', url='sys/role', perms='sys:role:role', type=1, icon='fa fa-paw', orderNum=1, gmtCreate=Thu Aug 10 14:13:19 CST 2017, gmtModified=null}, MenuDO{menuId=50, parentId=49, name='文章列表', url='blog/bContent', perms='blog:bContent:bContent', type=1, icon='fa fa-file-image-o', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=57, parentId=91, name='运行监控', url='/druid/index.html', perms='', type=1, icon='fa fa-caret-square-o-right', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=74, parentId=73, name='增加', url='/system/sysDept/add', perms='system:sysDept:add', type=2, icon='null', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=78, parentId=1, name='数据字典', url='/common/dict', perms='common:dict:dict', type=1, icon='fa fa-book', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=86, parentId=85, name='新增', url='oa/notify/add', perms='oa:notify:add', type=2, icon='fa fa-plus', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=2, parentId=3, name='系统菜单', url='sys/menu/', perms='sys:menu:menu', type=1, icon='fa fa-th-list', orderNum=2, gmtCreate=Wed Aug 09 22:55:15 CST 2017, gmtModified=null}, MenuDO{menuId=71, parentId=1, name='文件管理', url='/common/sysFile', perms='common:sysFile:sysFile', type=1, icon='fa fa-folder-open', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=75, parentId=73, name='刪除', url='system/sysDept/remove', perms='system:sysDept:remove', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=79, parentId=78, name='增加', url='/common/dict/add', perms='common:dict:add', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=80, parentId=78, name='编辑', url='/common/dict/edit', perms='common:dict:edit', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=87, parentId=85, name='编辑', url='oa/notify/edit', perms='oa:notify:edit', type=2, icon='fa fa-pencil-square-o', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=48, parentId=77, name='代码生成', url='common/generator', perms='common:generator', type=1, icon='fa fa-code', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=73, parentId=3, name='部门管理', url='/system/sysDept', perms='system:sysDept:sysDept', type=1, icon='fa fa-users', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=76, parentId=73, name='编辑', url='/system/sysDept/edit', perms='system:sysDept:edit', type=2, icon='null', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=81, parentId=78, name='删除', url='/common/dict/remove', perms='common:dict:remove', type=2, icon='', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=72, parentId=77, name='计划任务', url='common/job', perms='common:taskScheduleJob', type=1, icon='fa fa-hourglass-1', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=77, parentId=0, name='系统工具', url='', perms='', type=0, icon='fa fa-gear', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=83, parentId=78, name='批量删除', url='/common/dict/batchRemove', perms='common:dict:batchRemove', type=2, icon='', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=84, parentId=0, name='办公管理', url='', perms='', type=0, icon='fa fa-laptop', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=91, parentId=0, name='系统监控', url='', perms='', type=0, icon='fa fa-video-camera', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=49, parentId=0, name='博客管理', url='', perms='', type=0, icon='fa fa-rss', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=93, parentId=0, name='工作流程', url='', perms='', type=0, icon='fa fa-print', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=97, parentId=0, name='图表管理', url='', perms='', type=0, icon='fa fa-bar-chart', orderNum=7, gmtCreate=null, gmtModified=null}]
 2018-09-03 09:01:20 -请求地址 : http://localhost:8080/common/dict
 2018-09-03 09:01:20 -HTTP METHOD : GET
-2018-09-03 09:01:20 -CLASS_METHOD : com.bootdo.common.controller.DictController.dict
+2018-09-03 09:01:20 -CLASS_METHOD : com.cflworks.common.controller.DictController.dict
 2018-09-03 09:01:20 -参数 : []
 2018-09-03 09:01:20 -耗时 : 0
 2018-09-03 09:01:20 -返回值 : common/dict/dict
 2018-09-03 09:01:20 -请求地址 : http://localhost:8080/common/dict/type
 2018-09-03 09:01:20 -HTTP METHOD : GET
-2018-09-03 09:01:20 -CLASS_METHOD : com.bootdo.common.controller.DictController.listType
+2018-09-03 09:01:20 -CLASS_METHOD : com.cflworks.common.controller.DictController.listType
 2018-09-03 09:01:20 -参数 : []
 2018-09-03 09:01:20 -==>  Preparing: select distinct `type` , description from sys_dict 
 2018-09-03 09:01:20 -==> Parameters: 
 2018-09-03 09:01:20 -请求地址 : http://localhost:8080/common/dict/list
 2018-09-03 09:01:20 -HTTP METHOD : GET
-2018-09-03 09:01:20 -CLASS_METHOD : com.bootdo.common.controller.DictController.list
+2018-09-03 09:01:20 -CLASS_METHOD : com.cflworks.common.controller.DictController.list
 2018-09-03 09:01:20 -参数 : [{limit=10, offset=0}]
 2018-09-03 09:01:20 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict order by id desc limit ?, ? 
 2018-09-03 09:01:20 -==> Parameters: 0(Integer), 10(Integer)
@@ -599,16 +599,16 @@
 2018-09-03 09:01:20 -==> Parameters: 
 2018-09-03 09:01:20 -<==      Total: 1
 2018-09-03 09:01:20 -耗时 : 38
-2018-09-03 09:01:20 -返回值 : com.bootdo.common.utils.PageUtils@3efc2a5b
+2018-09-03 09:01:20 -返回值 : com.cflworks.common.utils.PageUtils@3efc2a5b
 2018-09-03 09:01:21 -请求地址 : http://localhost:8080/common/sysFile
 2018-09-03 09:01:21 -HTTP METHOD : GET
-2018-09-03 09:01:21 -CLASS_METHOD : com.bootdo.common.controller.FileController.sysFile
+2018-09-03 09:01:21 -CLASS_METHOD : com.cflworks.common.controller.FileController.sysFile
 2018-09-03 09:01:21 -参数 : [{}]
 2018-09-03 09:01:21 -耗时 : 0
 2018-09-03 09:01:21 -返回值 : common/file/file
 2018-09-03 09:01:21 -请求地址 : http://localhost:8080/common/sysFile/list
 2018-09-03 09:01:21 -HTTP METHOD : GET
-2018-09-03 09:01:21 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-09-03 09:01:21 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-09-03 09:01:21 -参数 : [{limit=12, offset=0, type=}]
 2018-09-03 09:01:21 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
 2018-09-03 09:01:21 -==> Parameters: 0(Integer), 12(Integer)
@@ -617,13 +617,13 @@
 2018-09-03 09:01:21 -==> Parameters: 
 2018-09-03 09:01:21 -<==      Total: 1
 2018-09-03 09:01:21 -耗时 : 6
-2018-09-03 09:01:21 -返回值 : com.bootdo.common.utils.PageUtils@60e60de9
+2018-09-03 09:01:21 -返回值 : com.cflworks.common.utils.PageUtils@60e60de9
 2018-09-03 09:02:46 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
 2018-09-03 09:02:46 -==> Parameters: 1(Long)
 2018-09-03 09:02:46 -<==      Total: 47
 2018-09-03 09:02:46 -请求地址 : http://localhost:8080/common/sysFile/list
 2018-09-03 09:02:46 -HTTP METHOD : GET
-2018-09-03 09:02:46 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-09-03 09:02:46 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-09-03 09:02:46 -参数 : [{limit=12, offset=0, type=0}]
 2018-09-03 09:02:46 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-09-03 09:02:46 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -632,10 +632,10 @@
 2018-09-03 09:02:46 -==> Parameters: 0(String)
 2018-09-03 09:02:46 -<==      Total: 1
 2018-09-03 09:02:46 -耗时 : 5
-2018-09-03 09:02:46 -返回值 : com.bootdo.common.utils.PageUtils@31465cd6
+2018-09-03 09:02:46 -返回值 : com.cflworks.common.utils.PageUtils@31465cd6
 2018-09-03 09:02:51 -请求地址 : http://localhost:8080/common/sysFile/upload
 2018-09-03 09:02:51 -HTTP METHOD : POST
-2018-09-03 09:02:51 -CLASS_METHOD : com.bootdo.common.controller.FileController.upload
+2018-09-03 09:02:51 -CLASS_METHOD : com.cflworks.common.controller.FileController.upload
 2018-09-03 09:02:51 -参数 : [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6a0350e5, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@69830e71]
 2018-09-03 09:02:51 -==>  Preparing: insert into sys_file ( `type`, `url`, `create_date` ) values ( ?, ?, ? ) 
 2018-09-03 09:02:51 -==> Parameters: 0(Integer), /files/81698eac-40a7-420e-8c13-25c63068eeb6.jpg(String), 2018-09-03 09:02:51.102(Timestamp)
@@ -644,7 +644,7 @@
 2018-09-03 09:02:51 -返回值 : {msg=操作成功, fileName=/files/81698eac-40a7-420e-8c13-25c63068eeb6.jpg, code=0}
 2018-09-03 09:02:51 -请求地址 : http://localhost:8080/common/sysFile/list
 2018-09-03 09:02:51 -HTTP METHOD : GET
-2018-09-03 09:02:51 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-09-03 09:02:51 -CLASS_METHOD : com.cflworks.common.controller.FileController.list
 2018-09-03 09:02:51 -参数 : [{limit=12, offset=0, type=0}]
 2018-09-03 09:02:51 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
 2018-09-03 09:02:51 -==> Parameters: 0(String), 0(Integer), 12(Integer)
@@ -653,16 +653,16 @@
 2018-09-03 09:02:51 -==> Parameters: 0(String)
 2018-09-03 09:02:51 -<==      Total: 1
 2018-09-03 09:02:51 -耗时 : 3
-2018-09-03 09:02:51 -返回值 : com.bootdo.common.utils.PageUtils@386c86f9
+2018-09-03 09:02:51 -返回值 : com.cflworks.common.utils.PageUtils@386c86f9
 2018-09-03 09:03:51 -请求地址 : http://localhost:8080/common/job
 2018-09-03 09:03:51 -HTTP METHOD : GET
-2018-09-03 09:03:51 -CLASS_METHOD : com.bootdo.common.controller.JobController.taskScheduleJob
+2018-09-03 09:03:51 -CLASS_METHOD : com.cflworks.common.controller.JobController.taskScheduleJob
 2018-09-03 09:03:51 -参数 : []
 2018-09-03 09:03:51 -耗时 : 0
 2018-09-03 09:03:51 -返回值 : common/job/job
 2018-09-03 09:03:51 -请求地址 : http://localhost:8080/common/job/list
 2018-09-03 09:03:51 -HTTP METHOD : GET
-2018-09-03 09:03:51 -CLASS_METHOD : com.bootdo.common.controller.JobController.list
+2018-09-03 09:03:51 -CLASS_METHOD : com.cflworks.common.controller.JobController.list
 2018-09-03 09:03:51 -参数 : [{limit=10, offset=0}]
 2018-09-03 09:03:51 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc limit ?, ? 
 2018-09-03 09:03:51 -==> Parameters: 0(Integer), 10(Integer)
@@ -671,22 +671,22 @@
 2018-09-03 09:03:51 -==> Parameters: 
 2018-09-03 09:03:51 -<==      Total: 1
 2018-09-03 09:03:51 -耗时 : 8
-2018-09-03 09:03:51 -返回值 : com.bootdo.common.utils.PageUtils@49b203bc
+2018-09-03 09:03:51 -返回值 : com.cflworks.common.utils.PageUtils@49b203bc
 2018-09-03 09:04:19 -请求地址 : http://localhost:8080/common/job/changeJobStatus
 2018-09-03 09:04:19 -HTTP METHOD : POST
-2018-09-03 09:04:19 -CLASS_METHOD : com.bootdo.common.controller.JobController.changeJobStatus
+2018-09-03 09:04:19 -CLASS_METHOD : com.cflworks.common.controller.JobController.changeJobStatus
 2018-09-03 09:04:19 -参数 : [2, stop]
 2018-09-03 09:04:19 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task where id = ? 
 2018-09-03 09:04:19 -==> Parameters: 2(Long)
 2018-09-03 09:04:19 -<==      Total: 1
 2018-09-03 09:04:19 -==>  Preparing: update sys_task SET `cron_expression` = ?, `method_name` = ?, `is_concurrent` = ?, `description` = ?, `update_by` = ?, `bean_class` = ?, `create_date` = ?, `job_status` = ?, `job_group` = ?, `update_date` = ?, `spring_bean` = ?, `job_name` = ? where id = ? 
-2018-09-03 09:04:19 -==> Parameters: 0/10 * * * * ?(String), run1(String), 1(String), (String), 4028ea815a3d2a8c015a3d2f8d2a0002(String), com.bootdo.common.task.WelcomeJob(String), 2017-05-19 18:30:56.0(Timestamp), 0(String), group1(String), 2017-05-19 18:31:07.0(Timestamp), (String), welcomJob(String), 2(Long)
+2018-09-03 09:04:19 -==> Parameters: 0/10 * * * * ?(String), run1(String), 1(String), (String), 4028ea815a3d2a8c015a3d2f8d2a0002(String), com.cflworks.common.task.WelcomeJob(String), 2017-05-19 18:30:56.0(Timestamp), 0(String), group1(String), 2017-05-19 18:31:07.0(Timestamp), (String), welcomJob(String), 2(Long)
 2018-09-03 09:04:19 -<==    Updates: 1
 2018-09-03 09:04:19 -耗时 : 7
 2018-09-03 09:04:19 -返回值 : {msg=任务停止成功, code=0}
 2018-09-03 09:04:19 -请求地址 : http://localhost:8080/common/job/list
 2018-09-03 09:04:19 -HTTP METHOD : GET
-2018-09-03 09:04:19 -CLASS_METHOD : com.bootdo.common.controller.JobController.list
+2018-09-03 09:04:19 -CLASS_METHOD : com.cflworks.common.controller.JobController.list
 2018-09-03 09:04:19 -参数 : [{limit=10, offset=0}]
 2018-09-03 09:04:19 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc limit ?, ? 
 2018-09-03 09:04:19 -==> Parameters: 0(Integer), 10(Integer)
@@ -695,10 +695,10 @@
 2018-09-03 09:04:19 -==> Parameters: 
 2018-09-03 09:04:19 -<==      Total: 1
 2018-09-03 09:04:19 -耗时 : 3
-2018-09-03 09:04:19 -返回值 : com.bootdo.common.utils.PageUtils@134a280b
+2018-09-03 09:04:19 -返回值 : com.cflworks.common.utils.PageUtils@134a280b
 2018-09-03 09:04:20 -请求地址 : http://localhost:8080/common/job/edit/2
 2018-09-03 09:04:20 -HTTP METHOD : GET
-2018-09-03 09:04:20 -CLASS_METHOD : com.bootdo.common.controller.JobController.edit
+2018-09-03 09:04:20 -CLASS_METHOD : com.cflworks.common.controller.JobController.edit
 2018-09-03 09:04:20 -参数 : [2, {}]
 2018-09-03 09:04:20 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task where id = ? 
 2018-09-03 09:04:20 -==> Parameters: 2(Long)
@@ -707,20 +707,20 @@
 2018-09-03 09:04:20 -返回值 : common/job/edit
 2018-09-03 09:05:09 -请求地址 : http://localhost:8080/common/job/changeJobStatus
 2018-09-03 09:05:09 -HTTP METHOD : POST
-2018-09-03 09:05:09 -CLASS_METHOD : com.bootdo.common.controller.JobController.changeJobStatus
+2018-09-03 09:05:09 -CLASS_METHOD : com.cflworks.common.controller.JobController.changeJobStatus
 2018-09-03 09:05:09 -参数 : [2, start]
 2018-09-03 09:05:09 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task where id = ? 
 2018-09-03 09:05:09 -==> Parameters: 2(Long)
 2018-09-03 09:05:09 -<==      Total: 1
 2018-09-03 09:05:09 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
 2018-09-03 09:05:09 -==>  Preparing: update sys_task SET `cron_expression` = ?, `method_name` = ?, `is_concurrent` = ?, `description` = ?, `update_by` = ?, `bean_class` = ?, `create_date` = ?, `job_status` = ?, `job_group` = ?, `update_date` = ?, `spring_bean` = ?, `job_name` = ? where id = ? 
-2018-09-03 09:05:09 -==> Parameters: 0/10 * * * * ?(String), run1(String), 1(String), (String), 4028ea815a3d2a8c015a3d2f8d2a0002(String), com.bootdo.common.task.WelcomeJob(String), 2017-05-19 18:30:56.0(Timestamp), 1(String), group1(String), 2017-05-19 18:31:07.0(Timestamp), (String), welcomJob(String), 2(Long)
+2018-09-03 09:05:09 -==> Parameters: 0/10 * * * * ?(String), run1(String), 1(String), (String), 4028ea815a3d2a8c015a3d2f8d2a0002(String), com.cflworks.common.task.WelcomeJob(String), 2017-05-19 18:30:56.0(Timestamp), 1(String), group1(String), 2017-05-19 18:31:07.0(Timestamp), (String), welcomJob(String), 2(Long)
 2018-09-03 09:05:09 -<==    Updates: 1
 2018-09-03 09:05:09 -耗时 : 4
 2018-09-03 09:05:09 -返回值 : {msg=任务启动成功, code=0}
 2018-09-03 09:05:10 -请求地址 : http://localhost:8080/common/job/list
 2018-09-03 09:05:10 -HTTP METHOD : GET
-2018-09-03 09:05:10 -CLASS_METHOD : com.bootdo.common.controller.JobController.list
+2018-09-03 09:05:10 -CLASS_METHOD : com.cflworks.common.controller.JobController.list
 2018-09-03 09:05:10 -参数 : [{limit=10, offset=0}]
 2018-09-03 09:05:10 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc limit ?, ? 
 2018-09-03 09:05:10 -==> Parameters: 0(Integer), 10(Integer)
@@ -729,22 +729,22 @@
 2018-09-03 09:05:10 -==> Parameters: 
 2018-09-03 09:05:10 -<==      Total: 1
 2018-09-03 09:05:10 -耗时 : 3
-2018-09-03 09:05:10 -返回值 : com.bootdo.common.utils.PageUtils@4df70550
+2018-09-03 09:05:10 -返回值 : com.cflworks.common.utils.PageUtils@4df70550
 2018-09-03 09:05:39 -请求地址 : http://localhost:8080/common/job/changeJobStatus
 2018-09-03 09:05:39 -HTTP METHOD : POST
-2018-09-03 09:05:39 -CLASS_METHOD : com.bootdo.common.controller.JobController.changeJobStatus
+2018-09-03 09:05:39 -CLASS_METHOD : com.cflworks.common.controller.JobController.changeJobStatus
 2018-09-03 09:05:39 -参数 : [2, stop]
 2018-09-03 09:05:39 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task where id = ? 
 2018-09-03 09:05:39 -==> Parameters: 2(Long)
 2018-09-03 09:05:39 -<==      Total: 1
 2018-09-03 09:05:39 -==>  Preparing: update sys_task SET `cron_expression` = ?, `method_name` = ?, `is_concurrent` = ?, `description` = ?, `update_by` = ?, `bean_class` = ?, `create_date` = ?, `job_status` = ?, `job_group` = ?, `update_date` = ?, `spring_bean` = ?, `job_name` = ? where id = ? 
-2018-09-03 09:05:39 -==> Parameters: 0/10 * * * * ?(String), run1(String), 1(String), (String), 4028ea815a3d2a8c015a3d2f8d2a0002(String), com.bootdo.common.task.WelcomeJob(String), 2017-05-19 18:30:56.0(Timestamp), 0(String), group1(String), 2017-05-19 18:31:07.0(Timestamp), (String), welcomJob(String), 2(Long)
+2018-09-03 09:05:39 -==> Parameters: 0/10 * * * * ?(String), run1(String), 1(String), (String), 4028ea815a3d2a8c015a3d2f8d2a0002(String), com.cflworks.common.task.WelcomeJob(String), 2017-05-19 18:30:56.0(Timestamp), 0(String), group1(String), 2017-05-19 18:31:07.0(Timestamp), (String), welcomJob(String), 2(Long)
 2018-09-03 09:05:39 -<==    Updates: 1
 2018-09-03 09:05:39 -耗时 : 2
 2018-09-03 09:05:39 -返回值 : {msg=任务停止成功, code=0}
 2018-09-03 09:05:39 -请求地址 : http://localhost:8080/common/job/list
 2018-09-03 09:05:39 -HTTP METHOD : GET
-2018-09-03 09:05:39 -CLASS_METHOD : com.bootdo.common.controller.JobController.list
+2018-09-03 09:05:39 -CLASS_METHOD : com.cflworks.common.controller.JobController.list
 2018-09-03 09:05:39 -参数 : [{limit=10, offset=0}]
 2018-09-03 09:05:39 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc limit ?, ? 
 2018-09-03 09:05:39 -==> Parameters: 0(Integer), 10(Integer)
@@ -753,7 +753,7 @@
 2018-09-03 09:05:39 -==> Parameters: 
 2018-09-03 09:05:39 -<==      Total: 1
 2018-09-03 09:05:39 -耗时 : 4
-2018-09-03 09:05:39 -返回值 : com.bootdo.common.utils.PageUtils@2de3567d
+2018-09-03 09:05:39 -返回值 : com.cflworks.common.utils.PageUtils@2de3567d
 2018-09-03 09:26:35 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 47], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 369]
 2018-09-03 09:56:35 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 47], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 730]
 2018-09-03 09:57:00 -Validating all active sessions...
@@ -770,8 +770,8 @@
 2018-09-03 12:05:38 -请求地址 : http://localhost:8080/login;JSESSIONID=3596ce52-c908-42a0-8e02-b7acbbb1c17f
 2018-09-03 12:05:38 -HTTP METHOD : GET
 2018-09-03 12:05:38 -HTTP METHOD : GET
-2018-09-03 12:05:38 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
-2018-09-03 12:05:38 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-09-03 12:05:38 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
+2018-09-03 12:05:38 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-09-03 12:05:38 -参数 : []
 2018-09-03 12:05:38 -参数 : []
 2018-09-03 12:05:38 -耗时 : 4
@@ -780,7 +780,7 @@
 2018-09-03 12:05:38 -返回值 : login
 2018-09-03 12:05:38 -请求地址 : http://localhost:8080/login;JSESSIONID=3596ce52-c908-42a0-8e02-b7acbbb1c17f
 2018-09-03 12:05:38 -HTTP METHOD : GET
-2018-09-03 12:05:38 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-09-03 12:05:38 -CLASS_METHOD : com.cflworks.system.controller.LoginController.login
 2018-09-03 12:05:38 -参数 : []
 2018-09-03 12:05:38 -耗时 : 0
 2018-09-03 12:05:38 -返回值 : login

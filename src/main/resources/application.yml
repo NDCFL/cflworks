@@ -23,7 +23,7 @@ spring:
       max-request-size: 30Mb
   devtools:
     restart:
-      enabled: true
+      enabled: false
   cache:
     type: ehcache
     ehcache:

@@ -20,8 +20,8 @@ import java.util.Map;
 /**
  * 文章内容
  * 
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-09-09 10:03:34
  */
 @Controller
@@ -68,9 +68,6 @@ public class ContentController extends BaseController {
 	@RequiresPermissions("blog:bContent:add")
 	@PostMapping("/save")
 	public R save(ContentDO bContent) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (bContent.getAllowComment() == null) {
 			bContent.setAllowComment(0);
 		}
@@ -101,9 +98,6 @@ public class ContentController extends BaseController {
 	@ResponseBody
 	@RequestMapping("/update")
 	public R update( ContentDO bContent) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		bContent.setGtmCreate(new Date());
 		bContentService.update(bContent);
 		return R.ok();
@@ -116,9 +110,6 @@ public class ContentController extends BaseController {
 	@PostMapping("/remove")
 	@ResponseBody
 	public R remove(Long id) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		if (bContentService.remove(id) > 0) {
 			return R.ok();
 		}
@@ -132,9 +123,6 @@ public class ContentController extends BaseController {
 	@PostMapping("/batchRemove")
 	@ResponseBody
 	public R remove(@RequestParam("ids[]") Long[] cids) {
-		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-		}
 		bContentService.batchRemove(cids);
 		return R.ok();
 	}

@@ -1,14 +1,14 @@
-bootdo:
+cflworks:
   uploadPath: /var/uploaded_files/
 logging:
   level:
     root: error
-    com.bootdo: info
+    com.cflworks: info
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/cflworks?useUnicode=true&characterEncoding=utf8
     username: root
     password: root
     initialSize: 1

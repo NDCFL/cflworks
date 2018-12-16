@@ -13,7 +13,7 @@ public class WelcomeJob implements Job{
 	@Autowired
 	SimpMessagingTemplate template;
     public void test(JobExecutionContext arg0) throws JobExecutionException {
-    	template.convertAndSend("/topic/getResponse", new Response("欢迎体验bootdo,这是一个任务计划，使用了websocket和quzrtz技术，可以在计划列表中取消，欢迎您加入qq群交流学习!" ));
+    	template.convertAndSend("/topic/getResponse", new Response("欢迎体验cflworks,这是一个任务计划，使用了websocket和quzrtz技术，可以在计划列表中取消，欢迎您加入qq群交流学习!" ));
 
     }
     @Override

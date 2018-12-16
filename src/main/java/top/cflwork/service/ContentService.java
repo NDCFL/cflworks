@@ -9,8 +9,8 @@ import java.util.Map;
 /**
  * 文章内容
  * 
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-09-09 10:03:34
  */
 public interface ContentService {

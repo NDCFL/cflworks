@@ -22,101 +22,72 @@
                 <div class="tab-content">
                     <!--basic info-->
                     <div class="ibox-content tab-pane fade in active"  id="basic_info">
-                        <form class="gg-form" role="form" id="basicInfoForm">
+                        <form class="form-horizontal" role="form" id="basicInfoForm">
                             <input name="userId" type="hidden" th:value="${user.userId}"/>
                             <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>姓名:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <input type="text" class="form-control" id="userName" name="name" th:value="${user.name}"  placeholder="请输入姓名" />
-                                </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>性别:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <div class="radio i-checks">
-                                        <label class="radio-inline" th:each="sex:${sexList}"> <input
-                                                th:field="*{user.sex}" type="radio" name="sex" th:value="${sex.id}" th:text="${sex.name}"/>
-                                        </label>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">姓名</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="userName" name="name" th:value="${user.name}"  placeholder="请输入姓名" />
                                     </div>
                                 </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>出生年月:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <input type="text" class="laydate-icon layer-date form-control" id="birth" name="birth" th:value="${user.birth}==null?null:${#dates.format(user.birth,'yyyy-MM-dd')}" placeholder="请选择出生年月"
-                                           onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" style="background-color: #fff;" readonly="readonly"/>
-                                </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>手机:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <input type="text" class="form-control" id="phone" name="mobile"  th:value="${user.mobile}" placeholder="请输入手机号" />
-                                </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>邮箱:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <input type="text" class="form-control" id="email" name="email" th:value="${user.email}" placeholder="请输入邮箱" />
-                                </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>居住地:</span>
-                                </div>
-                                <div class="gg-formDetail gg-font0" data-toggle="distpicker"  th:attr="data-province=${user.province},data-city=${user.city},data-district=${user.district}">
-                                    <div class="gg-area">
-                                        <select class="form-control" id="province" name="province">
-                                        </select>
-                                    </div>
-                                    <div class="gg-area">
-                                        <select class="form-control" id="city" name="city">
-                                        </select>
-                                    </div>
-                                    <div class="gg-area">
-                                        <select class="form-control" id="district" name="district">
-                                        </select>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">性别</label>
+                                    <div class="col-sm-10">
+                                        <div class="radio i-checks">
+                                            <label class="radio-inline" th:each="sex:${sexList}"> <input
+                                                    th:field="*{user.sex}" type="radio" name="sex" th:value="${sex.id}" th:text="${sex.name}"/>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>联系地址:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <input type="text" class="form-control" id="address" name="liveAddress" th:value="${user.liveAddress}" placeholder="请输入居住地址" />
-                                </div>
-                            </div>
-                            <div class="gg-formGroup">
-                                <div class="gg-formTitle">
-                                    <em class="gg-star">*</em>
-                                    <span>爱好:</span>
-                                </div>
-                                <div class="gg-formDetail">
-                                    <div class="checxbox i-checks" >
-                                        <input type="hidden" name="hobby" id="hobby"/>
-                                        <label th:each="hobby : ${hobbyList}">
-                                            <input type="checkbox" class="hobby"  th:value="${hobby.id}" th:text="${hobby.name}" th:checked="${hobby.remarks}=='true'"/>
-                                        </label>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">出生年月</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="laydate-icon layer-date form-control" id="birth" name="birth" th:value="${user.birth}==null?null:${#dates.format(user.birth,'yyyy-MM-dd')}" placeholder="请选择出生年月"
+                                               onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" style="background-color: #fff;" readonly="readonly"/>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">手机</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="phone" name="mobile"  th:value="${user.mobile}" placeholder="请输入手机号" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">邮箱:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="email" name="email" th:value="${user.email}" placeholder="请输入邮箱" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">居住地</label>
+                                    <div class="col-sm-10" data-toggle="distpicker"  th:attr="data-province=${user.province},data-city=${user.city},data-district=${user.district}">
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="province" name="province"></select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="city" name="city"></select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="district" name="district"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">联系地址</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="address" name="liveAddress" th:value="${user.liveAddress}" placeholder="请输入居住地址" />
+                                    </div>
+                                </div>
+                                <div class="form-group  checxbox i-checks">
+                                    <label class="col-sm-2 control-label">爱好</label>
+                                    <input type="hidden" name="hobby" id="hobby"/>
+                                    <label th:each="hobby : ${hobbyList}">
+                                        <input type="checkbox" class="hobby col-sm-4"  th:value="${hobby.id}" th:text="${hobby.name}" th:checked="${hobby.remarks}=='true'"/>
+                                    </label>
+                                    </div>
+                                </div>
                         </form>
                         <div class="gg-btnGroup">
                             <button type="button" class="btn btn-sm btn-primary" id="base_save">保存</button>

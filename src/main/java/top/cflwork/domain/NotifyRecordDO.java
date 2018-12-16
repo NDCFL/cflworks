@@ -7,8 +7,8 @@ import java.util.Date;
 /**
  * 通知通告发送记录
  *
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-10-10 11:08:06
  */
 public class NotifyRecordDO implements Serializable {

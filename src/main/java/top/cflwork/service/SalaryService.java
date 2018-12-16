@@ -8,8 +8,8 @@ import java.util.Map;
 /**
  * 审批流程测试表
  * 
- * @author chglee
- * @email 1992lcg@163.com
+ * @author 陈飞龙
+ * @email 275300091@qq.com
  * @date 2017-11-25 13:33:16
  */
 public interface SalaryService {

@@ -35,7 +35,7 @@ import java.util.List;
 import static org.activiti.editor.constants.ModelDataJsonConstants.*;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @author cflworks 275300091@qq.com
  */
 @RequestMapping("/activiti")
 @RestController
@@ -147,18 +147,12 @@ public class ModelController extends BaseController{
 
     @DeleteMapping("/model/{id}")
     public R remove(@PathVariable("id") String id) {
-        if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-            return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-        }
         repositoryService.deleteModel(id);
         return R.ok();
     }
 
     @PostMapping("/model/deploy/{id}")
     public R deploy(@PathVariable("id") String id) throws Exception {
-        if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-            return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-        }
         //获取模型
         Model modelData = repositoryService.getModel(id);
         byte[] bytes = repositoryService.getModelEditorSource(modelData.getId());
@@ -189,9 +183,6 @@ public class ModelController extends BaseController{
 
     @PostMapping("/model/batchRemove")
     public R batchRemove(@RequestParam("ids[]") String[] ids) {
-        if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-            return R.error(1, "演示系统不允许修改,完整体验请部署程序");
-        }
         for (String id : ids) {
             repositoryService.deleteModel(id);
         }
